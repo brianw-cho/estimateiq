@@ -279,22 +279,50 @@ Marine parts across categories:
 - [x] Labor hour adjustments by LOA and similar job history
 - [x] Estimate range calculation (low/expected/high)
 
-### Phase 4 (Next) - Frontend UI
+### Phase 4 - Frontend UI ✅
 
-- [ ] Install shadcn/ui components
-- [ ] Vessel input form with validation
-- [ ] Service request form
-- [ ] Estimate display component
-- [ ] Line item editor
-- [ ] Confidence indicators
-- [ ] Estimate range visualization
+- [x] Install shadcn/ui-style components (Button, Card, Input, Label, Select, Textarea, Progress, Badge)
+- [x] Vessel input form with validation
+- [x] Service request form with category selection
+- [x] Estimate display component with editable line items
+- [x] Line item editor (inline editing for labor/parts)
+- [x] Confidence indicators (progress bars, badges)
+- [x] Estimate range visualization (low/expected/high)
+- [x] Similar jobs reference display
+- [x] Marine theme with professional styling
+- [x] 80 frontend tests passing
 
-### Phase 5 - Polish & Demo
+### Phase 5 - Polish & Demo ✅
 
-- [ ] Loading states and error handling
-- [ ] 5 demo scenarios
-- [ ] Final testing
-- [ ] Demo documentation
+- [x] Loading states with spinners
+- [x] Error handling with user-friendly messages
+- [x] **Connection status indicator** - Real-time API health monitoring in header
+- [x] **Retry mechanism** - Automatic retry for failed API requests with exponential backoff
+- [x] **Toast notifications** - Action feedback for all user actions (success, error, warning, info)
+- [x] **Demo mode banner** - Indicates active demo scenario with reset capability
+- [x] **Reset to clean state** - Reset button in demo mode to restart scenario
+- [x] 5 demo scenarios with URL-based loading
+- [x] **136 frontend tests passing** (56 new tests for Phase 5 components)
+
+## Demo Scenarios
+
+The prototype includes 5 pre-configured demo scenarios accessible via URL parameters:
+
+| Demo | URL | Description |
+|------|-----|-------------|
+| Oil Change | `/estimate/new?demo=oil-change` | 28' Volvo D4 cabin cruiser annual oil change |
+| Bottom Paint | `/estimate/new?demo=bottom-paint` | 32' sailboat hull cleaning and bottom paint |
+| Winterization | `/estimate/new?demo=winterization` | 22' MerCruiser runabout winterization |
+| Diagnostic | `/estimate/new?demo=diagnostic` | 24' Yamaha center console no-start troubleshooting |
+| Unusual Vessel | `/estimate/new?demo=unusual` | 45' custom vessel with Mercury C9 engine |
+
+### Demo Mode Features
+
+When a demo scenario is active:
+- **Demo Banner**: Blue banner at top shows active scenario name
+- **Show Details**: Click to see full scenario description
+- **Reset Button**: Returns to scenario's starting point
+- **Exit Demo**: X button to exit demo mode and start fresh
 
 ## Technology Stack
 
@@ -302,7 +330,7 @@ Marine parts across categories:
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
-- shadcn/ui components (to be installed in Phase 4)
+- Custom UI components (shadcn-style)
 
 ### Backend
 - FastAPI
@@ -310,6 +338,35 @@ Marine parts across categories:
 - ChromaDB (vector store for RAG)
 - sentence-transformers (text embeddings)
 - Template-based Mock LLM (estimate generation)
+
+## Running Tests
+
+### Frontend Tests (136 tests)
+
+```bash
+cd frontend
+npm test
+```
+
+Test coverage includes:
+- Utility functions (cn, formatCurrency, formatPercent, formatDate, getConfidenceLevel)
+- VesselForm validation and interaction
+- ServiceRequestForm validation and interaction
+- ConfidenceIndicator rendering variants
+- EstimateRange display formats
+- SimilarJobsRef component
+- Toast notifications system
+- Connection status indicator
+- Demo banner and demo mode provider
+- API retry mechanism with exponential backoff
+
+### Backend Tests (221 tests)
+
+```bash
+cd backend
+source venv/bin/activate
+python -m pytest
+```
 
 ## Configuration
 

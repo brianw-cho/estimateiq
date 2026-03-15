@@ -15,7 +15,9 @@ import {
 import type { ServiceRequestData } from "@/components/estimate";
 import type { Vessel, Estimate, ServiceRequest } from "@/lib/types";
 import { generateEstimate } from "@/lib/api";
-import { ArrowLeft, ArrowRight, Loader2, AlertCircle } from "lucide-react";
+import { ArrowLeft, ArrowRight, Loader2, AlertCircle, RefreshCw } from "lucide-react";
+import { DemoBanner, DEFAULT_DEMO_SCENARIOS } from "@/components/ui/demo-banner";
+import { useToast } from "@/components/ui/toast";
 
 // Demo scenario presets
 const DEMO_SCENARIOS: Record<string, { vessel: Partial<Vessel>; service: Partial<ServiceRequestData> }> = {
@@ -102,6 +104,8 @@ function NewEstimateContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const demoScenario = searchParams.get("demo");
+  const { addToast } = useToast();
+  const [retryCount, setRetryCount] = React.useState(0);
 
   // Initialize state with demo data if present
   const getInitialVessel = React.useCallback(() => {
@@ -152,6 +156,7 @@ function NewEstimateContent() {
 
     setStep("generating");
     setApiError(null);
+    setRetryCount(0);
 
     try {
       const request: ServiceRequest = {
@@ -162,15 +167,39 @@ function NewEstimateContent() {
         region: serviceRequest.region,
       };
 
-      const result = await generateEstimate(request);
+      const result = await generateEstimate(request, {
+        onRetry: (attempt, error) => {
+          setRetryCount(attempt);
+          addToast({
+            type: "warning",
+            title: `Retrying... (Attempt ${attempt + 1})`,
+            message: error.message,
+            duration: 3000,
+          });
+        },
+      });
       setEstimate(result);
       setStep("result");
+      addToast({
+        type: "success",
+        title: "Estimate generated",
+        message: "Your AI-powered estimate is ready for review.",
+        duration: 4000,
+      });
     } catch (error) {
       console.error("Failed to generate estimate:", error);
-      setApiError(
-        error instanceof Error ? error.message : "Failed to generate estimate. Please try again."
-      );
+      const errorMessage = error instanceof Error ? error.message : "Failed to generate estimate. Please try again.";
+      setApiError(errorMessage);
       setStep("service");
+      addToast({
+        type: "error",
+        title: "Generation failed",
+        message: errorMessage,
+        action: {
+          label: "Retry",
+          onClick: handleServiceNext,
+        },
+      });
     }
   };
 
@@ -192,7 +221,42 @@ function NewEstimateContent() {
     setServiceRequest({ description: "", urgency: "routine", region: "Northeast" });
     setEstimate(null);
     setStep("vessel");
+    setApiError(null);
+    setVesselErrors({});
+    setServiceErrors({});
     router.push("/estimate/new");
+    addToast({
+      type: "info",
+      title: "Form reset",
+      message: "Starting a new estimate.",
+      duration: 2000,
+    });
+  };
+
+  const handleDemoReset = () => {
+    // Reset to the demo scenario's initial state
+    setVessel(getInitialVessel());
+    setServiceRequest(getInitialService());
+    setEstimate(null);
+    setStep("vessel");
+    setApiError(null);
+    setVesselErrors({});
+    setServiceErrors({});
+    addToast({
+      type: "info",
+      title: "Demo reset",
+      message: "Returned to demo scenario starting point.",
+      duration: 2000,
+    });
+  };
+
+  const handleExitDemo = () => {
+    router.push("/estimate/new");
+    addToast({
+      type: "info",
+      title: "Exited demo mode",
+      duration: 2000,
+    });
   };
 
   const renderStepIndicator = () => (
@@ -233,6 +297,17 @@ function NewEstimateContent() {
 
   return (
     <>
+      {/* Demo Mode Banner */}
+      {demoScenario && (
+        <DemoBanner
+          scenarioId={demoScenario}
+          scenarios={DEFAULT_DEMO_SCENARIOS}
+          onReset={handleDemoReset}
+          onClose={handleExitDemo}
+          className="mb-6 -mx-4 -mt-8"
+        />
+      )}
+      
       <h1 className="text-3xl font-bold text-marine-800 mb-2 text-center">
         Create New Estimate
       </h1>
@@ -308,6 +383,12 @@ function NewEstimateContent() {
                 Our AI is analyzing similar jobs and calculating labor hours and parts
                 recommendations for your vessel...
               </p>
+              {retryCount > 0 && (
+                <div className="flex items-center gap-2 text-sm text-yellow-600">
+                  <RefreshCw className="h-4 w-4 animate-spin" />
+                  <span>Retry attempt {retryCount}...</span>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
@@ -318,13 +399,32 @@ function NewEstimateContent() {
         <div className="space-y-6">
           <EstimateDisplay
             estimate={estimate}
-            onUpdateEstimate={handleUpdateEstimate}
+            onUpdateEstimate={(updated) => {
+              handleUpdateEstimate(updated);
+              addToast({
+                type: "success",
+                title: "Estimate updated",
+                message: "Your changes have been saved.",
+                duration: 2000,
+              });
+            }}
             onApprove={() => {
               setEstimate({ ...estimate, status: "approved" });
+              addToast({
+                type: "success",
+                title: "Estimate approved",
+                message: "The estimate has been approved and is ready to send.",
+                duration: 3000,
+              });
             }}
             onSend={() => {
               setEstimate({ ...estimate, status: "sent" });
-              alert("In production, this would send the estimate to the customer.");
+              addToast({
+                type: "success",
+                title: "Estimate sent",
+                message: "In production, this would send the estimate to the customer.",
+                duration: 4000,
+              });
             }}
           />
           <div className="flex justify-between pt-4">
