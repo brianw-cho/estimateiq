@@ -156,8 +156,8 @@ export function EstimateDisplay({
           {/* Vessel and Service Info */}
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-2">
-              <h3 className="font-semibold text-marine-800">Vessel</h3>
-              <div className="text-sm text-marine-600 space-y-1">
+              <h3 className="font-semibold text-gray-900">Vessel</h3>
+              <div className="text-sm text-gray-700 space-y-1">
                 {estimate.vessel.name && <p className="font-medium">{estimate.vessel.name}</p>}
                 <p>{estimate.vessel.loa}&apos; {estimate.vessel.hull_type || "fiberglass"}</p>
                 <p>
@@ -166,8 +166,8 @@ export function EstimateDisplay({
               </div>
             </div>
             <div className="space-y-2">
-              <h3 className="font-semibold text-marine-800">Service Request</h3>
-              <p className="text-sm text-marine-600">{estimate.service_description}</p>
+              <h3 className="font-semibold text-gray-900">Service Request</h3>
+              <p className="text-sm text-gray-700">{estimate.service_description}</p>
             </div>
           </div>
         </CardContent>
@@ -208,7 +208,7 @@ export function EstimateDisplay({
 
       {/* Labor Items */}
       <div className="space-y-2">
-        <h2 className="text-lg font-semibold text-marine-800">Labor</h2>
+        <h2 className="text-lg font-semibold text-gray-900">Labor</h2>
         <LineItemTable
           items={estimate.labor_items}
           title="Labor Tasks"
@@ -219,7 +219,7 @@ export function EstimateDisplay({
 
       {/* Parts Items */}
       <div className="space-y-2">
-        <h2 className="text-lg font-semibold text-marine-800">Parts</h2>
+        <h2 className="text-lg font-semibold text-gray-900">Parts</h2>
         <LineItemTable
           items={estimate.parts_items}
           title="Parts & Materials"
@@ -232,16 +232,16 @@ export function EstimateDisplay({
       <Card className="bg-marine-50">
         <CardContent className="pt-6">
           <div className="space-y-2">
-            <div className="flex justify-between text-marine-700">
+            <div className="flex justify-between text-gray-700">
               <span>Labor Subtotal:</span>
               <span className="font-medium">{formatCurrency(estimate.labor_subtotal)}</span>
             </div>
-            <div className="flex justify-between text-marine-700">
+            <div className="flex justify-between text-gray-700">
               <span>Parts Subtotal:</span>
               <span className="font-medium">{formatCurrency(estimate.parts_subtotal)}</span>
             </div>
             <div className="border-t border-marine-200 pt-2 mt-2">
-              <div className="flex justify-between text-xl font-bold text-marine-800">
+              <div className="flex justify-between text-xl font-bold text-gray-900">
                 <span>Total Estimate:</span>
                 <span>{formatCurrency(estimate.total_estimate)}</span>
               </div>

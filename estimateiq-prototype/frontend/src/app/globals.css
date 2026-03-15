@@ -45,12 +45,14 @@
   --color-marine-950: var(--marine-950);
 }
 
+/* Dark mode disabled for prototype - uncomment for dark mode support
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0f172a;
     --foreground: #f8fafc;
   }
 }
+*/
 
 body {
   background: var(--background);

@@ -49,7 +49,7 @@ export default function ViewEstimatePage() {
           <CardContent className="py-16">
             <div className="flex flex-col items-center justify-center space-y-4">
               <Loader2 className="h-12 w-12 text-marine-600 animate-spin" />
-              <h2 className="text-xl font-semibold text-marine-800">
+              <h2 className="text-xl font-semibold text-gray-900">
                 Loading Estimate
               </h2>
             </div>
@@ -96,11 +96,11 @@ export default function ViewEstimatePage() {
         <Card>
           <CardContent className="py-8">
             <div className="flex flex-col items-center justify-center space-y-4">
-              <AlertCircle className="h-12 w-12 text-marine-400" />
-              <h2 className="text-xl font-semibold text-marine-800">
+              <AlertCircle className="h-12 w-12 text-gray-400" />
+              <h2 className="text-xl font-semibold text-gray-900">
                 Estimate Not Found
               </h2>
-              <p className="text-marine-600">
+              <p className="text-gray-700">
                 The estimate you&apos;re looking for doesn&apos;t exist or has been deleted.
               </p>
               <Link href="/estimate/new">

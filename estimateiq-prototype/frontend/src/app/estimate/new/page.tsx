@@ -266,27 +266,27 @@ function NewEstimateContent() {
           className={`flex items-center justify-center w-10 h-10 rounded-full font-semibold ${
             step === "vessel" || step === "service" || step === "result"
               ? "bg-marine-600 text-white"
-              : "bg-marine-100 text-marine-500"
+              : "bg-gray-200 text-gray-600"
           }`}
         >
           1
         </div>
-        <div className={`w-16 h-1 ${step !== "vessel" ? "bg-marine-600" : "bg-marine-200"}`} />
+        <div className={`w-16 h-1 ${step !== "vessel" ? "bg-marine-600" : "bg-gray-200"}`} />
         <div
           className={`flex items-center justify-center w-10 h-10 rounded-full font-semibold ${
             step === "service" || step === "result"
               ? "bg-marine-600 text-white"
-              : "bg-marine-100 text-marine-500"
+              : "bg-gray-200 text-gray-600"
           }`}
         >
           2
         </div>
-        <div className={`w-16 h-1 ${step === "result" ? "bg-marine-600" : "bg-marine-200"}`} />
+        <div className={`w-16 h-1 ${step === "result" ? "bg-marine-600" : "bg-gray-200"}`} />
         <div
           className={`flex items-center justify-center w-10 h-10 rounded-full font-semibold ${
             step === "result"
               ? "bg-marine-600 text-white"
-              : "bg-marine-100 text-marine-500"
+              : "bg-gray-200 text-gray-600"
           }`}
         >
           3
@@ -308,10 +308,10 @@ function NewEstimateContent() {
         />
       )}
       
-      <h1 className="text-3xl font-bold text-marine-800 mb-2 text-center">
+      <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">
         Create New Estimate
       </h1>
-      <p className="text-marine-600 text-center mb-8">
+      <p className="text-gray-700 text-center mb-8">
         {step === "vessel" && "Enter vessel information"}
         {step === "service" && "Describe the service needed"}
         {step === "generating" && "Generating your estimate..."}
@@ -376,10 +376,10 @@ function NewEstimateContent() {
           <CardContent className="py-16">
             <div className="flex flex-col items-center justify-center space-y-4">
               <Loader2 className="h-12 w-12 text-marine-600 animate-spin" />
-              <h2 className="text-xl font-semibold text-marine-800">
+              <h2 className="text-xl font-semibold text-gray-900">
                 Generating Your Estimate
               </h2>
-              <p className="text-marine-600 text-center max-w-md">
+              <p className="text-gray-700 text-center max-w-md">
                 Our AI is analyzing similar jobs and calculating labor hours and parts
                 recommendations for your vessel...
               </p>
@@ -446,7 +446,7 @@ function LoadingFallback() {
   return (
     <div className="flex flex-col items-center justify-center py-16">
       <Loader2 className="h-8 w-8 text-marine-600 animate-spin" />
-      <p className="mt-4 text-marine-600">Loading...</p>
+      <p className="mt-4 text-gray-700">Loading...</p>
     </div>
   );
 }

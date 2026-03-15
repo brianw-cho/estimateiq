@@ -23,7 +23,7 @@ export default function Home() {
                   Create New Estimate
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-marine-600">
+              <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-marine-600">
                 Watch Demo
               </Button>
             </div>
@@ -34,7 +34,7 @@ export default function Home() {
       {/* Value Props Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-marine-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Why EstimateIQ?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -51,7 +51,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   Our AI analyzes your service request and vessel specifications to instantly 
                   recommend labor hours and parts based on thousands of historical jobs.
                 </p>
@@ -71,7 +71,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   Every estimate shows &quot;Based on X similar jobs&quot; so you know exactly 
                   how much historical data supports the recommendation.
                 </p>
@@ -91,7 +91,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   EstimateIQ augments your expertise, not replaces it. Review, adjust, 
                   and approve every estimate before it goes to the customer.
                 </p>
@@ -104,7 +104,7 @@ export default function Home() {
       {/* How It Works Section */}
       <section className="py-16 bg-marine-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-marine-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             How It Works
           </h2>
           <div className="max-w-4xl mx-auto">
@@ -113,10 +113,10 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full bg-marine-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   1
                 </div>
-                <h3 className="text-lg font-semibold text-marine-800 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Enter Vessel &amp; Service
                 </h3>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   Input vessel specs (LOA, engine, year) and describe the service needed
                 </p>
               </div>
@@ -124,10 +124,10 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full bg-marine-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   2
                 </div>
-                <h3 className="text-lg font-semibold text-marine-800 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   AI Generates Estimate
                 </h3>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   Our AI analyzes similar jobs and recommends labor hours and parts
                 </p>
               </div>
@@ -135,10 +135,10 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full bg-marine-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   3
                 </div>
-                <h3 className="text-lg font-semibold text-marine-800 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Review &amp; Send
                 </h3>
-                <p className="text-marine-600">
+                <p className="text-gray-700">
                   Edit as needed, then approve and send to your customer
                 </p>
               </div>
@@ -150,10 +150,10 @@ export default function Home() {
       {/* Demo Scenarios Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-marine-800 mb-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
             Try Demo Scenarios
           </h2>
-          <p className="text-center text-marine-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
             Experience EstimateIQ with pre-configured demo scenarios representing 
             common marine service requests.
           </p>
@@ -165,7 +165,7 @@ export default function Home() {
                   <CardDescription>28&apos; Cabin Cruiser, Volvo D4, 2019</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">High confidence estimate</p>
+                  <p className="text-sm text-gray-600">High confidence estimate</p>
                 </CardContent>
               </Card>
             </Link>
@@ -176,7 +176,7 @@ export default function Home() {
                   <CardDescription>32&apos; Sailboat, 2015</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">Hull service estimate</p>
+                  <p className="text-sm text-gray-600">Hull service estimate</p>
                 </CardContent>
               </Card>
             </Link>
@@ -187,7 +187,7 @@ export default function Home() {
                   <CardDescription>22&apos; Runabout, MerCruiser 4.3, 2018</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">Annual service estimate</p>
+                  <p className="text-sm text-gray-600">Annual service estimate</p>
                 </CardContent>
               </Card>
             </Link>
@@ -198,7 +198,7 @@ export default function Home() {
                   <CardDescription>24&apos; Center Console, Yamaha F250, 2020</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">Medium confidence estimate</p>
+                  <p className="text-sm text-gray-600">Medium confidence estimate</p>
                 </CardContent>
               </Card>
             </Link>
@@ -209,18 +209,18 @@ export default function Home() {
                   <CardDescription>45&apos; Custom, Caterpillar C9, 2010</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">Lower confidence - unusual vessel</p>
+                  <p className="text-sm text-gray-600">Lower confidence - unusual vessel</p>
                 </CardContent>
               </Card>
             </Link>
             <Link href="/estimate/new" className="block">
               <Card className="card-hover h-full border-dashed border-2 border-marine-300 bg-marine-50">
                 <CardHeader>
-                  <CardTitle className="text-lg text-marine-600">Custom Estimate</CardTitle>
+                  <CardTitle className="text-lg text-gray-800">Custom Estimate</CardTitle>
                   <CardDescription>Enter your own vessel and service</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-marine-500">Start from scratch</p>
+                  <p className="text-sm text-gray-600">Start from scratch</p>
                 </CardContent>
               </Card>
             </Link>

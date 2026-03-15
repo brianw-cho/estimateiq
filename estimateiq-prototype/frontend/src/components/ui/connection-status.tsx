@@ -154,7 +154,7 @@ export function ConnectionIndicator({ className }: { className?: string }) {
       aria-label={`API connection status: ${state}`}
     >
       <span className={cn("w-2 h-2 rounded-full", dotClass)} />
-      <span className="text-xs text-gray-500 capitalize">{state}</span>
+      <span className="text-xs text-gray-600 capitalize">{state}</span>
     </div>
   );
 }

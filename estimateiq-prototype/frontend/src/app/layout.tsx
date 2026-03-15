@@ -72,7 +72,7 @@ function Footer() {
         <p className="text-sm text-marine-500">
           &copy; {new Date().getFullYear()} EstimateIQ by DockMaster. A Valsoft Company.
         </p>
-        <p className="text-sm text-marine-400">
+        <p className="text-sm text-marine-500">
           AI-Powered Marine Service Estimates
         </p>
       </div>
@@ -86,9 +86,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light" style={{ colorScheme: 'light' }}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-[#f8fafc] text-[#0f172a]`}
       >
         <Providers>
           <Header />

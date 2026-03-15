@@ -23,7 +23,7 @@ class Settings:
     # API
     api_prefix: str = "/api"
     
-    # CORS
+    # CORS - defaults plus any from CORS_ORIGINS env var
     cors_origins: List[str] = field(default_factory=lambda: [
         "http://localhost:3000", 
         "http://127.0.0.1:3000"
@@ -52,7 +52,7 @@ class Settings:
         self.use_real_llm = os.getenv("USE_REAL_LLM", "false").lower() == "true"
         self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
         
-        # Parse CORS origins from environment
+        # Parse CORS origins from environment (comma-separated)
         cors_env = os.getenv("CORS_ORIGINS")
         if cors_env:
             self.cors_origins = [origin.strip() for origin in cors_env.split(",")]

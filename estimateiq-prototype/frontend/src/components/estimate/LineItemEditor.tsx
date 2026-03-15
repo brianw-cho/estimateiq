@@ -71,7 +71,7 @@ export function LineItemEditor({
             className="w-20"
           />
         </td>
-        <td className="px-4 py-3 text-sm text-marine-600">{editedItem.unit}</td>
+        <td className="px-4 py-3 text-sm text-gray-700">{editedItem.unit}</td>
         <td className="px-4 py-3">
           <Input
             type="number"
@@ -82,7 +82,7 @@ export function LineItemEditor({
             className="w-24"
           />
         </td>
-        <td className="px-4 py-3 text-right font-medium text-marine-800">
+        <td className="px-4 py-3 text-right font-medium text-gray-900">
           {formatCurrency(editedItem.quantity * editedItem.unit_price)}
         </td>
         <td className="px-4 py-3">
@@ -113,22 +113,22 @@ export function LineItemEditor({
   }
 
   return (
-    <tr className="hover:bg-marine-50 transition-colors">
+    <tr className="bg-white hover:bg-marine-50 transition-colors">
       <td className="px-4 py-3">
         <div>
-          <p className="font-medium text-marine-800">{item.description}</p>
+          <p className="font-medium text-gray-900">{item.description}</p>
           {item.part_number && (
-            <p className="text-xs text-marine-500">Part #: {item.part_number}</p>
+            <p className="text-xs text-gray-600">Part #: {item.part_number}</p>
           )}
           {item.source_reference && (
-            <p className="text-xs text-marine-400 italic">{item.source_reference}</p>
+            <p className="text-xs text-gray-500 italic">{item.source_reference}</p>
           )}
         </div>
       </td>
-      <td className="px-4 py-3 text-marine-700">{item.quantity}</td>
-      <td className="px-4 py-3 text-sm text-marine-600">{item.unit}</td>
-      <td className="px-4 py-3 text-marine-700">{formatCurrency(item.unit_price)}</td>
-      <td className="px-4 py-3 text-right font-medium text-marine-800">
+      <td className="px-4 py-3 text-gray-800">{item.quantity}</td>
+      <td className="px-4 py-3 text-sm text-gray-700">{item.unit}</td>
+      <td className="px-4 py-3 text-gray-800">{formatCurrency(item.unit_price)}</td>
+      <td className="px-4 py-3 text-right font-medium text-gray-900">
         {formatCurrency(item.total_price)}
       </td>
       <td className="px-4 py-3">
@@ -193,25 +193,25 @@ export function LineItemTable({
       <table className="w-full">
         <thead>
           <tr className="bg-marine-50 border-b border-marine-200">
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               {title}
             </th>
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               Qty
             </th>
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               Unit
             </th>
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               Price
             </th>
-            <th className="px-4 py-3 text-right text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-right text-sm font-semibold text-gray-800">
               Total
             </th>
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               Confidence
             </th>
-            <th className="px-4 py-3 text-left text-sm font-semibold text-marine-700">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-gray-800">
               Actions
             </th>
           </tr>
@@ -232,10 +232,10 @@ export function LineItemTable({
         </tbody>
         <tfoot>
           <tr className="bg-marine-100 border-t-2 border-marine-200">
-            <td colSpan={4} className="px-4 py-3 text-right font-semibold text-marine-700">
+            <td colSpan={4} className="px-4 py-3 text-right font-semibold text-gray-700">
               Subtotal:
             </td>
-            <td className="px-4 py-3 text-right font-bold text-marine-800">
+            <td className="px-4 py-3 text-right font-bold text-gray-900">
               {formatCurrency(subtotal)}
             </td>
             <td colSpan={2}></td>
