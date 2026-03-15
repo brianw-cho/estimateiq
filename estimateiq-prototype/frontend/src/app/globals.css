@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+/* EstimateIQ Marine Theme */
+:root {
+  /* Marine blues palette */
+  --marine-50: #f0f7ff;
+  --marine-100: #e0efff;
+  --marine-200: #b9dfff;
+  --marine-300: #7cc5ff;
+  --marine-400: #36a6ff;
+  --marine-500: #0c88f0;
+  --marine-600: #006acc;
+  --marine-700: #0054a6;
+  --marine-800: #004080;
+  --marine-900: #003366;
+  --marine-950: #001f3f;
+
+  /* Background and foreground */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  
+  /* Accent colors */
+  --accent-green: #059669;
+  --accent-yellow: #d97706;
+  --accent-red: #dc2626;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Marine color palette for Tailwind */
+  --color-marine-50: var(--marine-50);
+  --color-marine-100: var(--marine-100);
+  --color-marine-200: var(--marine-200);
+  --color-marine-300: var(--marine-300);
+  --color-marine-400: var(--marine-400);
+  --color-marine-500: var(--marine-500);
+  --color-marine-600: var(--marine-600);
+  --color-marine-700: var(--marine-700);
+  --color-marine-800: var(--marine-800);
+  --color-marine-900: var(--marine-900);
+  --color-marine-950: var(--marine-950);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Custom scrollbar for marine theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--marine-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--marine-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--marine-500);
+}
+
+/* Focus ring styles */
+.focus-ring {
+  outline: 2px solid var(--marine-500);
+  outline-offset: 2px;
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--marine-100) 25%,
+    var(--marine-200) 50%,
+    var(--marine-100) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Confidence indicator colors */
+.confidence-high {
+  background-color: #059669;
+}
+
+.confidence-medium {
+  background-color: #d97706;
+}
+
+.confidence-low {
+  background-color: #dc2626;
+}
+
+/* Table styles for estimates */
+.estimate-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.estimate-table th {
+  background-color: var(--marine-50);
+  color: var(--marine-800);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--marine-200);
+}
+
+.estimate-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--marine-100);
+}
+
+.estimate-table tr:hover {
+  background-color: var(--marine-50);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Estimate range bar */
+.estimate-range-bar {
+  position: relative;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    var(--marine-200) 0%,
+    var(--marine-400) 50%,
+    var(--marine-200) 100%
+  );
+  border-radius: 4px;
+}
+
+.estimate-range-marker {
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  background-color: var(--marine-700);
+  border-radius: 2px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
