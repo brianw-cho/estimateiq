@@ -10,6 +10,10 @@ A comprehensive business case and working prototype for EstimateIQ, an AI-powere
 
 Marine service departments operate in a high-complexity environment where creating accurate estimates is both critical and time-consuming. EstimateIQ leverages DockMaster's historical work order data across 1,000+ marinas to generate accurate, data-driven service estimates in minutes.
 
+## Demo
+
+![Demo](./deliverable/demo.gif)
+
 ### Key Value Proposition
 
 | Metric | Before EstimateIQ | After EstimateIQ | Impact |
