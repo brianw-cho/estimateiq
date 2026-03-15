@@ -1,0 +1,410 @@
+{
+  "service_templates": {
+    "engine": {
+      "oil_change": {
+        "keywords": ["oil change", "oil and filter", "oil service", "engine oil"],
+        "base_labor_hours": 1.5,
+        "labor_variance": 0.5,
+        "labor_tasks": [
+          {
+            "task": "Oil and filter change",
+            "base_hours": 1.5,
+            "description_template": "Oil and filter change - {engine_make} {engine_model}"
+          }
+        ],
+        "required_parts": [
+          {"category": "Filters", "type": "oil_filter", "quantity": 1},
+          {"category": "Fluids", "type": "engine_oil", "quantity": 2, "unit": "gallon"}
+        ],
+        "optional_parts": [
+          {"category": "Filters", "type": "fuel_filter", "quantity": 1, "probability": 0.3}
+        ]
+      },
+      "tune_up": {
+        "keywords": ["tune up", "tune-up", "tuneup", "ignition service"],
+        "base_labor_hours": 2.5,
+        "labor_variance": 1.0,
+        "labor_tasks": [
+          {
+            "task": "Engine tune-up",
+            "base_hours": 2.5,
+            "description_template": "Engine tune-up and ignition service - {engine_make}"
+          }
+        ],
+        "required_parts": [
+          {"category": "Ignition", "type": "spark_plugs", "quantity": 4},
+          {"category": "Filters", "type": "fuel_filter", "quantity": 1}
+        ],
+        "optional_parts": [
+          {"category": "Ignition", "type": "ignition_coil", "quantity": 1, "probability": 0.2},
+          {"category": "Filters", "type": "air_filter", "quantity": 1, "probability": 0.4}
+        ]
+      },
+      "overheating": {
+        "keywords": ["overheating", "overheat", "running hot", "temperature high", "cooling"],
+        "base_labor_hours": 3.0,
+        "labor_variance": 1.5,
+        "labor_tasks": [
+          {
+            "task": "Cooling system diagnosis and repair",
+            "base_hours": 3.0,
+            "description_template": "Cooling system diagnosis - {engine_make} {engine_model}"
+          }
+        ],
+        "required_parts": [
+          {"category": "Impellers", "type": "water_pump_impeller", "quantity": 1},
+          {"category": "Fluids", "type": "coolant", "quantity": 2, "unit": "gallon"}
+        ],
+        "optional_parts": [
+          {"category": "Belts & Hoses", "type": "raw_water_hose", "quantity": 1, "probability": 0.3},
+          {"category": "Gaskets/Seals", "type": "water_pump_gasket", "quantity": 1, "probability": 0.5}
+        ]
+      }
+    },
+    "hull": {
+      "bottom_paint": {
+        "keywords": ["bottom paint", "antifouling", "haul out", "hull paint"],
+        "base_labor_hours": 8.0,
+        "labor_variance": 4.0,
+        "loa_multiplier": 0.15,
+        "labor_tasks": [
+          {
+            "task": "Hull preparation and sanding",
+            "base_hours": 3.0,
+            "description_template": "Hull preparation and sanding"
+          },
+          {
+            "task": "Bottom paint application",
+            "base_hours": 5.0,
+            "description_template": "Bottom paint application - 2 coats"
+          }
+        ],
+        "required_parts": [
+          {"category": "Bottom Paint", "type": "ablative_paint", "quantity": 2, "unit": "gallon"},
+          {"category": "Zincs/Anodes", "type": "hull_zinc", "quantity": 2}
+        ],
+        "optional_parts": [
+          {"category": "Bottom Paint", "type": "primer", "quantity": 1, "unit": "gallon", "probability": 0.4}
+        ]
+      },
+      "cleaning": {
+        "keywords": ["hull cleaning", "bottom cleaning", "pressure wash", "hull wash"],
+        "base_labor_hours": 2.0,
+        "labor_variance": 1.0,
+        "loa_multiplier": 0.05,
+        "labor_tasks": [
+          {
+            "task": "Hull cleaning and pressure wash",
+            "base_hours": 2.0,
+            "description_template": "Hull cleaning and pressure wash"
+          }
+        ],
+        "required_parts": [],
+        "optional_parts": []
+      },
+      "gelcoat_repair": {
+        "keywords": ["gelcoat", "gel coat", "fiberglass repair", "hull repair", "scratch repair"],
+        "base_labor_hours": 3.0,
+        "labor_variance": 2.0,
+        "labor_tasks": [
+          {
+            "task": "Gelcoat repair",
+            "base_hours": 3.0,
+            "description_template": "Gelcoat repair and finishing"
+          }
+        ],
+        "required_parts": [
+          {"category": "Hull Repair", "type": "gelcoat", "quantity": 1}
+        ],
+        "optional_parts": [
+          {"category": "Hull Repair", "type": "fiberglass_cloth", "quantity": 1, "probability": 0.3}
+        ]
+      }
+    },
+    "electrical": {
+      "troubleshooting": {
+        "keywords": ["electrical", "no start", "won't start", "battery", "wiring", "troubleshoot"],
+        "base_labor_hours": 2.0,
+        "labor_variance": 1.5,
+        "labor_tasks": [
+          {
+            "task": "Electrical system diagnosis",
+            "base_hours": 2.0,
+            "description_template": "Electrical system troubleshooting and diagnosis"
+          }
+        ],
+        "required_parts": [],
+        "optional_parts": [
+          {"category": "Electrical", "type": "marine_battery", "quantity": 1, "probability": 0.4},
+          {"category": "Electrical", "type": "battery_switch", "quantity": 1, "probability": 0.2}
+        ]
+      },
+      "battery_service": {
+        "keywords": ["battery install", "battery replace", "new battery", "battery service"],
+        "base_labor_hours": 1.0,
+        "labor_variance": 0.5,
+        "labor_tasks": [
+          {
+            "task": "Battery installation",
+            "base_hours": 1.0,
+            "description_template": "Marine battery installation and testing"
+          }
+        ],
+        "required_parts": [
+          {"category": "Electrical", "type": "marine_battery", "quantity": 1}
+        ],
+        "optional_parts": [
+          {"category": "Electrical", "type": "battery_cables", "quantity": 1, "probability": 0.3}
+        ]
+      }
+    },
+    "outboard": {
+      "impeller": {
+        "keywords": ["impeller", "water pump", "cooling pump"],
+        "base_labor_hours": 2.0,
+        "labor_variance": 0.5,
+        "labor_tasks": [
+          {
+            "task": "Impeller replacement",
+            "base_hours": 2.0,
+            "description_template": "Water pump impeller replacement - {engine_make}"
+          }
+        ],
+        "required_parts": [
+          {"category": "Impellers", "type": "water_pump_impeller", "quantity": 1},
+          {"category": "Gaskets/Seals", "type": "water_pump_gasket", "quantity": 1}
+        ],
+        "optional_parts": []
+      },
+      "lower_unit": {
+        "keywords": ["lower unit", "gear oil", "lower unit service", "gearcase"],
+        "base_labor_hours": 2.5,
+        "labor_variance": 1.0,
+        "labor_tasks": [
+          {
+            "task": "Lower unit service",
+            "base_hours": 2.5,
+            "description_template": "Lower unit service and gear oil change - {engine_make}"
+          }
+        ],
+        "required_parts": [
+          {"category": "Fluids", "type": "gear_lube", "quantity": 1, "unit": "quart"}
+        ],
+        "optional_parts": [
+          {"category": "Props & Hardware", "type": "prop_hardware", "quantity": 1, "probability": 0.2}
+        ]
+      },
+      "prop_service": {
+        "keywords": ["propeller", "prop", "prop repair", "prop balance"],
+        "base_labor_hours": 1.0,
+        "labor_variance": 0.5,
+        "labor_tasks": [
+          {
+            "task": "Propeller service",
+            "base_hours": 1.0,
+            "description_template": "Propeller inspection and service"
+          }
+        ],
+        "required_parts": [
+          {"category": "Zincs/Anodes", "type": "prop_zinc", "quantity": 1}
+        ],
+        "optional_parts": [
+          {"category": "Props & Hardware", "type": "prop_hardware", "quantity": 1, "probability": 0.4}
+        ]
+      }
+    },
+    "inboard": {
+      "transmission": {
+        "keywords": ["transmission", "trans service", "gear", "transmission fluid"],
+        "base_labor_hours": 2.5,
+        "labor_variance": 1.0,
+        "labor_tasks": [
+          {
+            "task": "Transmission service",
+            "base_hours": 2.5,
+            "description_template": "Transmission fluid change and inspection"
+          }
+        ],
+        "required_parts": [
+          {"category": "Fluids", "type": "transmission_fluid", "quantity": 2, "unit": "quart"}
+        ],
+        "optional_parts": [
+          {"category": "Gaskets/Seals", "type": "transmission_seal", "quantity": 1, "probability": 0.2}
+        ]
+      },
+      "exhaust": {
+        "keywords": ["exhaust", "manifold", "riser", "exhaust system"],
+        "base_labor_hours": 4.0,
+        "labor_variance": 2.0,
+        "labor_tasks": [
+          {
+            "task": "Exhaust system service",
+            "base_hours": 4.0,
+            "description_template": "Exhaust manifold/riser inspection and service"
+          }
+        ],
+        "required_parts": [
+          {"category": "Gaskets/Seals", "type": "exhaust_gasket", "quantity": 2}
+        ],
+        "optional_parts": [
+          {"category": "Exhaust", "type": "exhaust_elbow", "quantity": 1, "probability": 0.3}
+        ]
+      }
+    },
+    "annual": {
+      "winterization": {
+        "keywords": ["winterization", "winterize", "winter storage", "lay up"],
+        "base_labor_hours": 3.5,
+        "labor_variance": 1.5,
+        "labor_tasks": [
+          {
+            "task": "Engine winterization",
+            "base_hours": 2.0,
+            "description_template": "Engine winterization - {engine_make}"
+          },
+          {
+            "task": "Water system winterization",
+            "base_hours": 1.0,
+            "description_template": "Fresh water system winterization"
+          },
+          {
+            "task": "Fuel system treatment",
+            "base_hours": 0.5,
+            "description_template": "Fuel stabilizer treatment"
+          }
+        ],
+        "required_parts": [
+          {"category": "Fluids", "type": "antifreeze", "quantity": 4, "unit": "gallon"},
+          {"category": "Fluids", "type": "fuel_stabilizer", "quantity": 1},
+          {"category": "Fluids", "type": "fogging_oil", "quantity": 1}
+        ],
+        "optional_parts": [
+          {"category": "Filters", "type": "oil_filter", "quantity": 1, "probability": 0.5}
+        ]
+      },
+      "spring_commissioning": {
+        "keywords": ["commissioning", "spring service", "launch prep", "decommission", "launch"],
+        "base_labor_hours": 4.0,
+        "labor_variance": 2.0,
+        "labor_tasks": [
+          {
+            "task": "Engine service and startup",
+            "base_hours": 2.0,
+            "description_template": "Engine service and startup check - {engine_make}"
+          },
+          {
+            "task": "Systems check",
+            "base_hours": 1.5,
+            "description_template": "All systems inspection and testing"
+          },
+          {
+            "task": "Sea trial",
+            "base_hours": 0.5,
+            "description_template": "Sea trial and final check"
+          }
+        ],
+        "required_parts": [
+          {"category": "Filters", "type": "oil_filter", "quantity": 1},
+          {"category": "Fluids", "type": "engine_oil", "quantity": 2, "unit": "gallon"}
+        ],
+        "optional_parts": [
+          {"category": "Impellers", "type": "water_pump_impeller", "quantity": 1, "probability": 0.3},
+          {"category": "Zincs/Anodes", "type": "hull_zinc", "quantity": 2, "probability": 0.4}
+        ]
+      }
+    },
+    "diagnostic": {
+      "general": {
+        "keywords": ["diagnose", "troubleshoot", "inspect", "check", "running rough", "problem", "issue"],
+        "base_labor_hours": 1.5,
+        "labor_variance": 1.0,
+        "labor_tasks": [
+          {
+            "task": "Diagnostic inspection",
+            "base_hours": 1.5,
+            "description_template": "Diagnostic inspection and troubleshooting"
+          }
+        ],
+        "required_parts": [],
+        "optional_parts": []
+      },
+      "compression_test": {
+        "keywords": ["compression", "compression test", "cylinder check"],
+        "base_labor_hours": 1.0,
+        "labor_variance": 0.5,
+        "labor_tasks": [
+          {
+            "task": "Compression test",
+            "base_hours": 1.0,
+            "description_template": "Engine compression test - all cylinders"
+          }
+        ],
+        "required_parts": [],
+        "optional_parts": []
+      }
+    },
+    "mechanical": {
+      "steering": {
+        "keywords": ["steering", "helm", "steering cable", "hydraulic steering"],
+        "base_labor_hours": 2.5,
+        "labor_variance": 1.5,
+        "labor_tasks": [
+          {
+            "task": "Steering system service",
+            "base_hours": 2.5,
+            "description_template": "Steering system inspection and service"
+          }
+        ],
+        "required_parts": [
+          {"category": "Fluids", "type": "hydraulic_fluid", "quantity": 1, "unit": "quart"}
+        ],
+        "optional_parts": [
+          {"category": "Mechanical", "type": "steering_cable", "quantity": 1, "probability": 0.2}
+        ]
+      },
+      "trim": {
+        "keywords": ["trim", "tilt", "trim pump", "trim motor", "power trim"],
+        "base_labor_hours": 2.0,
+        "labor_variance": 1.0,
+        "labor_tasks": [
+          {
+            "task": "Trim system service",
+            "base_hours": 2.0,
+            "description_template": "Trim/tilt system service"
+          }
+        ],
+        "required_parts": [
+          {"category": "Fluids", "type": "hydraulic_fluid", "quantity": 1, "unit": "quart"}
+        ],
+        "optional_parts": []
+      }
+    }
+  },
+  "default_template": {
+    "base_labor_hours": 2.0,
+    "labor_variance": 1.0,
+    "labor_tasks": [
+      {
+        "task": "General service",
+        "base_hours": 2.0,
+        "description_template": "Service as requested"
+      }
+    ],
+    "required_parts": [],
+    "optional_parts": []
+  },
+  "loa_adjustments": {
+    "under_20": {"labor_multiplier": 0.8, "parts_multiplier": 0.9},
+    "20_25": {"labor_multiplier": 0.9, "parts_multiplier": 0.95},
+    "25_30": {"labor_multiplier": 1.0, "parts_multiplier": 1.0},
+    "30_35": {"labor_multiplier": 1.15, "parts_multiplier": 1.1},
+    "35_40": {"labor_multiplier": 1.3, "parts_multiplier": 1.2},
+    "over_40": {"labor_multiplier": 1.5, "parts_multiplier": 1.3}
+  },
+  "confidence_adjustments": {
+    "exact_template_match": 0.1,
+    "has_similar_jobs": 0.15,
+    "engine_match": 0.05,
+    "loa_match": 0.03
+  }
+}

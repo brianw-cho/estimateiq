@@ -1,0 +1,803 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================
+% PACKAGES
+% ============================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tocloft}
+\usepackage{lastpage}
+
+% ============================================
+% COLOR DEFINITIONS
+% ============================================
+\definecolor{valsoftblue}{RGB}{0, 82, 147}
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{tableheader}{RGB}{230, 240, 250}
+\definecolor{linkblue}{RGB}{0, 102, 204}
+
+% ============================================
+% HYPERREF SETUP
+% ============================================
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=linkblue,
+    citecolor=darkblue,
+    pdftitle={EstimateIQ: AI-Powered Service Estimate Generator},
+    pdfauthor={AI Venture Builder Team},
+    pdfsubject={Valsoft AI Venture Builder Case Study - DockMaster},
+}
+
+% ============================================
+% SECTION FORMATTING
+% ============================================
+\titleformat{\section}
+    {\Large\bfseries\color{valsoftblue}}
+    {\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}
+    {\large\bfseries\color{darkblue}}
+    {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+    {\normalsize\bfseries\color{darkblue}}
+    {\thesubsubsection}{1em}{}
+
+\titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% ============================================
+% HEADER AND FOOTER
+% ============================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{gray}EstimateIQ Business Case}
+\fancyhead[R]{\small\color{gray}Valsoft AI Venture Builder}
+\fancyfoot[C]{\small\color{gray}Page \thepage\ of \pageref{LastPage}}
+\fancyfoot[R]{\small\color{gray}Confidential}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ============================================
+% TABLE OF CONTENTS FORMATTING
+% ============================================
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforesecskip}{6pt}
+
+% ============================================
+% CUSTOM COMMANDS
+% ============================================
+\newcommand{\highlight}[1]{\textbf{\textcolor{valsoftblue}{#1}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ============================================
+% DOCUMENT START
+% ============================================
+\begin{document}
+
+% ============================================
+% TITLE PAGE
+% ============================================
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Huge\bfseries\color{valsoftblue} EstimateIQ}\\[0.5cm]
+    {\LARGE AI-Powered Service Estimate Generator}\\[2cm]
+    
+    \rule{\textwidth}{1.5pt}\\[0.5cm]
+    {\Large Valsoft AI Venture Builder Case Study}\\[0.3cm]
+    {\Large DockMaster}\\[0.5cm]
+    \rule{\textwidth}{1.5pt}\\[2cm]
+    
+    {\large\bfseries Business Case \& Go-To-Market Strategy}\\[3cm]
+    
+    \vfill
+    
+    \begin{tabular}{rl}
+        \textbf{Date:} & March 2026 \\[0.3cm]
+        \textbf{Author:} & Brian Cho \\
+    \end{tabular}
+    
+    
+\end{titlepage}
+
+% ============================================
+% TABLE OF CONTENTS
+% ============================================
+\newpage
+\tableofcontents
+\newpage
+
+% ============================================
+% EXECUTIVE SUMMARY
+% ============================================
+\section{Executive Summary}
+
+\textbf{Recommendation:} DockMaster should develop and launch \highlight{EstimateIQ}, an AI-powered service estimate generator that transforms the labor-intensive process of creating marine repair estimates into a 5-minute workflow.
+
+\subsection*{The Opportunity}
+\begin{itemize}[leftmargin=*]
+    \item Marine repair shops lose an estimated \textbf{\$14,667/month per 5-technician shop} in billable hours due to administrative inefficiency
+    \item Service writers spend \textbf{15--30 minutes per estimate} manually researching parts, looking up labor guides, and cross-referencing vessel specifications
+    \item The marina management software market has effectively zero AI penetration
+\end{itemize}
+
+\subsection*{The Solution}
+EstimateIQ leverages DockMaster's historical work order data across 1,000+ marinas to generate accurate, data-driven service estimates in minutes. Using a RAG (Retrieval-Augmented Generation) architecture with real-time parts pricing integration, EstimateIQ recommends labor tasks, parts, and quantities based on patterns learned from thousands of similar completed jobs.
+
+\subsection*{Financial Impact}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{4cm}X@{}}
+\toprule
+\textbf{Metric} & \textbf{Target} \\
+\midrule
+Year 1 ARR Target & \$360,000 (100 customers at \$300/month average) \\
+Year 3 ARR Target & \$1.47M (350 customers at \$350/month average) \\
+Customer ROI & 23x--43x return on subscription cost \\
+Prototype Timeline & 3--5 days for functional demonstration \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================
+% PROBLEM STATEMENT
+% ============================================
+\newpage
+\section{Problem Statement}
+
+\subsection{The Core Challenge}
+
+Marine service departments operate in a high-complexity environment where creating accurate estimates is both critical and time-consuming. Unlike automotive repair with standardized flat-rate guides, marine repair involves combinatorial complexity across multiple variables:
+
+\begin{itemize}[leftmargin=*]
+    \item Vessel type and LOA (Length Overall)
+    \item Engine make, model, and age
+    \item Regional factors (saltwater vs. freshwater, climate)
+    \item Seasonal timing and demand patterns
+    \item Service type and scope
+\end{itemize}
+
+This complexity creates significant operational bottlenecks that directly impact revenue and customer satisfaction.
+
+\subsection{Quantified Pain Points}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{5cm}L{8.5cm}@{}}
+\toprule
+\textbf{Pain Point} & \textbf{Impact} \\
+\midrule
+Manual paperwork and data entry & 2--3 hours per technician daily [1] \\
+Estimate approval delays & Average 45 minutes per job [1] \\
+Lost billable hours per shop & \$14,667/month (5-technician shop) [2] \\
+Supply chain delays affecting maintenance & 60\% of ship owners experience delays [3] \\
+Field service inefficiency impact & 68\% report unplanned downtime hits revenue [1] \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Current Workflow Inefficiencies}
+
+The estimate creation process suffers from multiple friction points:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Quote Creation and Rework:} ``Marine shop teams create estimates repeatedly for different customers, often starting from scratch because they lack reusable templates.''
+    
+    \item \textbf{Waiting on Approvals:} ``Technicians often complete a repair step and then pause while they wait for customer approval, often buried in texts, voicemails, or emails.''
+    
+    \item \textbf{Inconsistent Pricing:} New and seasonal staff lack experience to create accurate estimates, leading to pricing discrepancies and margin erosion.
+    
+    \item \textbf{Lost Revenue from Slow Response:} Boat owners report long wait times for estimates, leading to lost jobs when competitors respond faster.
+\end{enumerate}
+
+\subsection{Why AI Is the Right Solution}
+
+This problem cannot be solved by better templates alone. The complexity of marine service estimation involves:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Tens of thousands of meaningful variable combinations} across vessel types, engine configurations, and service types
+    \item \textbf{Regional and seasonal patterns} that affect labor times and parts availability
+    \item \textbf{Historical pricing intelligence} that no single service writer can hold in memory
+\end{itemize}
+
+DockMaster's data asset---work order history across 1,000+ marinas---contains patterns that only machine learning can effectively extract and apply. This creates a \textbf{network effect}: every work order completed across the customer base improves the model for every customer, building a competitive moat no competitor can replicate without equivalent data.
+
+% ============================================
+% SOLUTION OVERVIEW
+% ============================================
+\newpage
+\section{Solution Overview}
+
+\subsection{What is EstimateIQ?}
+
+EstimateIQ is an AI-powered service estimate generator that transforms marine repair estimation from a 15--30 minute manual process into a 5-minute intelligent workflow.
+
+\subsection{How It Works}
+
+\subsubsection*{Input}
+\begin{itemize}[leftmargin=*]
+    \item Vessel identifier (or manual entry of specs: LOA, engine make/model, year)
+    \item Service request description (free text or category selection)
+\end{itemize}
+
+\subsubsection*{Processing}
+\begin{itemize}[leftmargin=*]
+    \item AI analyzes the request against historical work order patterns
+    \item Retrieves similar completed jobs from DockMaster's network
+    \item Matches vessel-specific, regional, and seasonal factors
+    \item Cross-references real-time parts pricing from PartSmart integration
+\end{itemize}
+
+\subsubsection*{Output}
+\begin{itemize}[leftmargin=*]
+    \item Recommended line items (labor tasks with hour estimates)
+    \item Parts recommendations with quantities and current pricing
+    \item Confidence indicator for each recommendation
+    \item Range presentation (low/expected/high)
+    \item Comparison reference: ``Based on 47 similar jobs on 25--30' vessels with Volvo D4 engines''
+    \item Flagged upsell considerations
+\end{itemize}
+
+\subsection{Key Differentiators}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3.5cm}C{2.5cm}C{2.5cm}C{2.5cm}@{}}
+\toprule
+\textbf{Feature} & \textbf{EstimateIQ} & \textbf{Manual Process} & \textbf{Template-Based} \\
+\midrule
+Time to create estimate & 5 minutes & 15--30 minutes & 10--15 minutes \\
+Accuracy based on historical data & Yes & No & No \\
+Real-time parts pricing & Yes & Manual lookup & No \\
+Vessel-specific intelligence & Yes & Experience-dependent & Limited \\
+Cross-marina learning & Yes & No & No \\
+Confidence scoring & Yes & No & No \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Human-in-the-Loop Design}
+
+EstimateIQ is designed as a \textbf{recommendation tool}, not an autonomous system:
+
+\begin{itemize}[leftmargin=*]
+    \item AI suggests estimates; human service writers review and approve
+    \item All recommendations can be modified before sending to customers
+    \item Service writer expertise is augmented, not replaced
+    \item This approach reduces liability and builds trust during adoption
+\end{itemize}
+
+% ============================================
+% TECHNICAL ARCHITECTURE
+% ============================================
+\newpage
+\section{Technical Architecture}
+
+\subsection{Core Components}
+
+\subsubsection{Data Pipeline}
+\begin{itemize}[leftmargin=*]
+    \item ETL process extracts historical work orders from DockMaster database
+    \item Work orders are processed, cleaned, and embedded into vector representations
+    \item Vector database enables semantic similarity search across millions of historical jobs
+\end{itemize}
+
+\subsubsection{RAG (Retrieval-Augmented Generation) Engine}
+\begin{itemize}[leftmargin=*]
+    \item When a new estimate request arrives, the system retrieves the most similar historical jobs
+    \item Retrieved context is passed to the LLM along with the current request
+    \item LLM generates structured estimate recommendations grounded in real data
+\end{itemize}
+
+\subsubsection{PartSmart Integration}
+\begin{itemize}[leftmargin=*]
+    \item Real-time API connection to PartSmart catalog
+    \item All parts suggestions are validated against current catalog
+    \item Pricing is pulled in real-time to ensure accuracy
+    \item \textbf{Critical:} System never generates/hallucinates part numbers---all suggestions grounded in catalog
+\end{itemize}
+
+\subsubsection{Confidence Scoring}
+Each recommendation includes a confidence score based on:
+\begin{itemize}[leftmargin=*]
+    \item Number of similar historical jobs found
+    \item Variance in historical labor times
+    \item Recency of similar jobs
+    \item Match quality on vessel specifications
+\end{itemize}
+
+\subsection{Data Requirements}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3.5cm}L{3.5cm}L{6cm}@{}}
+\toprule
+\textbf{Data Element} & \textbf{Source} & \textbf{Purpose} \\
+\midrule
+Historical work orders & DockMaster DB & Training data and retrieval corpus \\
+Vessel specifications & DockMaster DB & Matching and context \\
+Parts catalog & PartSmart API & Real-time pricing and validation \\
+Labor rates & Customer configuration & Estimate calculation \\
+Regional data & DockMaster DB & Regional pattern recognition \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Privacy \& Security}
+
+\begin{itemize}[leftmargin=*]
+    \item Customer data is never shared across organizations
+    \item Model training uses anonymized, aggregated patterns
+    \item Each customer's own historical data improves their specific recommendations
+    \item SOC 2 compliance pathway aligned with Valsoft standards
+\end{itemize}
+
+% ============================================
+% VALUE PROPOSITION & ROI
+% ============================================
+\newpage
+\section{Value Proposition \& ROI Analysis}
+
+\subsection{Customer Value Calculation}
+
+\subsubsection*{Time Savings}
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{4cm}C{3cm}C{3cm}L{3.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Before EstimateIQ} & \textbf{After EstimateIQ} & \textbf{Impact} \\
+\midrule
+Avg. estimate creation time & 25 minutes & 5 minutes & 80\% reduction \\
+Daily time saved (12 estimates/day) & --- & 4 hours & Redirected to revenue work \\
+Additional jobs started/week & --- & 3--5 & From reduced queue time \\
+Monthly revenue impact & --- & \$8,000--\$15,000 & At \$125/hr blended rate \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection*{ROI Calculation}
+For a mid-size boatyard (5 technicians, 12 estimates/day):
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{4cm}X R{3cm}@{}}
+\toprule
+\textbf{Component} & \textbf{Calculation} & \textbf{Value} \\
+\midrule
+Time saved daily & 12 estimates $\times$ 20 min saved & 4 hours \\
+Monthly hours saved & 4 hours $\times$ 22 working days & 88 hours \\
+Labor value recovered & 88 hours $\times$ \$50/hr (service writer) & \$4,400/month \\
+Additional job revenue & 3 jobs/week $\times$ \$2,000 avg $\times$ 4.3 weeks & \$25,800/month \\
+\midrule
+\textbf{Total monthly value} & & \textbf{\$30,200} \\
+\textbf{EstimateIQ cost} & & \textbf{\$350/month} \\
+\textbf{ROI} & & \textbf{86x} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Even using conservative estimates (50\% of projected value), the ROI remains compelling at \textbf{43x}.
+
+\subsection{Value for Different Customer Segments}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3.5cm}C{2.5cm}C{2.5cm}C{2.5cm}C{2cm}C{1.5cm}@{}}
+\toprule
+\textbf{Segment} & \textbf{Estimates/Day} & \textbf{Time Saved/Month} & \textbf{Monthly Value} & \textbf{Subscription} & \textbf{ROI} \\
+\midrule
+Small (2--3 techs) & 5--8 & 36 hours & \$8,000 & \$199 & 40x \\
+Medium (5--7 techs) & 10--15 & 73 hours & \$18,000 & \$299 & 60x \\
+Large (8+ techs) & 20+ & 146 hours & \$35,000 & \$399 & 88x \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Secondary Value Drivers}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Consistency:} Eliminates pricing discrepancies across service writers
+    \item \textbf{Training Acceleration:} New staff produce expert-quality estimates immediately
+    \item \textbf{Customer Experience:} Faster response times reduce lost opportunities
+    \item \textbf{Data Quality:} Structured estimate data improves downstream analytics
+\end{enumerate}
+
+% ============================================
+% MARKET OPPORTUNITY
+% ============================================
+\newpage
+\section{Market Opportunity}
+
+\subsection{Addressable Market}
+
+\textbf{DockMaster Customer Base:}
+\begin{itemize}[leftmargin=*]
+    \item 1,000+ marinas, boatyards, and marine service providers worldwide
+    \item Estimated 150--250 high-volume service operations (5+ technicians, 10+ estimates/day)
+\end{itemize}
+
+\subsection{Target Segments}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3.5cm}L{5cm}C{2cm}C{2cm}@{}}
+\toprule
+\textbf{Segment} & \textbf{Description} & \textbf{Est. Count} & \textbf{Fit Score} \\
+\midrule
+High-volume boatyards & 10+ estimates/day, 5+ technicians & 150--250 & Excellent \\
+Full-service marinas & Service + slip rental & 300--400 & Good \\
+Marine service providers & Service-only operations & 200--300 & Good \\
+Yacht clubs & Limited service operations & 100--150 & Moderate \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Market Dynamics}
+
+\subsubsection*{Zero AI Penetration}
+The marina management software market currently has no AI-powered estimation tools. DockMaster would be the first mover with a significant data advantage.
+
+\subsubsection*{Competitive Pressure}
+According to DockMaster's own documentation, Dockwa's ``Telescope'' dynamic pricing tool is being used as a competitive differentiator to win DockMaster customers. Launching EstimateIQ would counter this competitive threat and establish DockMaster as the innovation leader.
+
+\subsubsection*{Industry Trends}
+\begin{itemize}[leftmargin=*]
+    \item Digital transformation is accelerating across field service industries
+    \item 72\% of service firms report efficiency gains from automation
+    \item Predictive maintenance and AI diagnostics are becoming industry standards in adjacent sectors
+\end{itemize}
+
+% ============================================
+% COMPETITIVE ANALYSIS
+% ============================================
+\newpage
+\section{Competitive Analysis}
+
+\subsection{Direct Competition}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3cm}C{2.5cm}C{2.5cm}C{2.5cm}C{2.5cm}@{}}
+\toprule
+\textbf{Competitor} & \textbf{AI Estimation} & \textbf{Marine-Specific} & \textbf{Network Learning} & \textbf{Status} \\
+\midrule
+DockMaster (current) & No & Yes & No & Market leader \\
+Dockwa & No & Yes & No & Growing competitor \\
+Molo & No & Partial & No & Niche player \\
+General FSM tools & Limited & No & No & Not marine-focused \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Key Finding:} No competitor currently offers AI-powered estimation for marine services.
+
+\subsection{DockMaster's Competitive Advantages}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Data Moat:} 1,000+ marinas $\times$ years of work order history = millions of data points
+    \item \textbf{Domain Expertise:} 40+ years of marina management experience embedded in data schema
+    \item \textbf{Integration:} Tight coupling with existing DockMaster workflows
+    \item \textbf{Network Effects:} Each customer's usage improves the model for all customers
+    \item \textbf{Valsoft Portfolio Leverage:} Access to AI Labs, proven technology patterns
+\end{enumerate}
+
+\subsection{Barriers to Entry for Competitors}
+
+\begin{itemize}[leftmargin=*]
+    \item Building equivalent data would require years of market presence
+    \item Customer switching costs increase with AI adoption (data lock-in)
+    \item Valsoft's AI Labs provides infrastructure and expertise competitors lack
+\end{itemize}
+
+% ============================================
+% GO-TO-MARKET STRATEGY
+% ============================================
+\newpage
+\section{Go-To-Market Strategy}
+
+\subsection{Positioning}
+
+\textbf{Tagline:} ``EstimateIQ turns your service department's collective experience into instant, accurate estimates.''
+
+\textbf{Value Proposition Statement:}
+``EstimateIQ analyzes thousands of similar jobs across the DockMaster network to recommend the right labor hours and parts for every vessel. Transform your 25-minute estimate process into 5 minutes of review and approval.''
+
+\subsection{Target Customer Profile}
+
+\textbf{Primary Target:} High-volume boatyards
+\begin{itemize}[leftmargin=*]
+    \item 5+ service technicians
+    \item 10+ estimates created daily
+    \item Active service department generating >\$1M annual revenue
+    \item Existing DockMaster Service Management user
+    \item Pain: Time-constrained service writers, inconsistent estimates, lost opportunities
+\end{itemize}
+
+\textbf{Estimated Target Count:} 150--250 of DockMaster's current customer base
+
+\subsection{Pricing Strategy}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{2.5cm}C{2.5cm}L{5cm}L{3.5cm}@{}}
+\toprule
+\textbf{Tier} & \textbf{Price} & \textbf{Features} & \textbf{Target Segment} \\
+\midrule
+\textbf{Starter} & \$199/month & 100 estimates/month, basic analytics & Small shops (2--3 techs) \\
+\textbf{Pro} & \$399/month & Unlimited estimates, advanced analytics, priority support & Medium shops (5--7 techs) \\
+\textbf{Enterprise} & \$500--800/month & Multi-location, API access, dedicated success manager & Large operations (8+ techs) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Pricing Rationale:}
+\begin{itemize}[leftmargin=*]
+    \item At \$199--\$399/month, even conservative 10x ROI is easily achievable
+    \item Price anchors against labor cost savings (\$4,400+/month recoverable)
+    \item Tiered structure allows entry at lower risk and expansion with usage
+\end{itemize}
+
+\subsection{Sales Motion}
+
+\subsubsection*{Phase 1: Design Partners (Months 1--3)}
+\begin{itemize}[leftmargin=*]
+    \item Identify 10--15 high-volume, tech-forward customers
+    \item Personal outreach from account managers
+    \item Free access in exchange for feedback and case study participation
+    \item Goal: Validate accuracy, refine UX, collect testimonials
+\end{itemize}
+
+\subsubsection*{Phase 2: Beta Launch (Months 4--6)}
+\begin{itemize}[leftmargin=*]
+    \item Expand to 50--100 customers
+    \item 30-day free trial with full functionality
+    \item Introduce ``shadow mode'': AI estimates shown alongside manual estimates for comparison
+    \item Begin collecting conversion data and refining pricing
+\end{itemize}
+
+\subsubsection*{Phase 3: General Availability (Months 7--9)}
+\begin{itemize}[leftmargin=*]
+    \item Full commercial launch
+    \item Marketing campaign: case studies, webinars, trade show presence
+    \item Account manager-led sales with quota targets
+    \item Product-led growth via in-app promotion to all DockMaster users
+\end{itemize}
+
+\subsection{Marketing Channels}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{3.5cm}L{7cm}L{3cm}@{}}
+\toprule
+\textbf{Channel} & \textbf{Tactic} & \textbf{Investment} \\
+\midrule
+Account Management & Direct outreach to high-value accounts & Existing team \\
+In-Product & Banner ads, feature discovery in DockMaster & Low \\
+Email & Targeted campaigns to service module users & Low \\
+Webinars & ``Future of Marine Service'' educational series & Medium \\
+Trade Shows & IBEX, MDCE demonstrations & Medium \\
+Case Studies & Customer success stories with ROI data & Low \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Success Metrics}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{4cm}C{3.5cm}C{3.5cm}C{3.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Month 3} & \textbf{Month 6} & \textbf{Month 12} \\
+\midrule
+Design Partners & 15 & --- & --- \\
+Beta Users & --- & 75 & --- \\
+Paying Customers & --- & 25 & 100 \\
+ARR & --- & \$75,000 & \$360,000 \\
+NPS & >40 & >50 & >60 \\
+Estimate Accuracy & >80\% acceptance & >85\% acceptance & >90\% acceptance \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================
+% FINANCIAL PROJECTIONS
+% ============================================
+\newpage
+\section{Financial Projections}
+
+\subsection{Revenue Model}
+
+\textbf{Primary Revenue:} Monthly SaaS subscription
+\begin{itemize}[leftmargin=*]
+    \item Starter: \$199/month
+    \item Pro: \$399/month
+    \item Enterprise: \$500--800/month
+\end{itemize}
+
+\textbf{Average Revenue Per Account (ARPA):} \$300/month (blended)
+
+\subsection{3-Year Projection}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{5cm}C{3.5cm}C{3.5cm}C{3.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} \\
+\midrule
+Paying Customers & 100 & 200 & 350 \\
+ARPA (monthly) & \$300 & \$325 & \$350 \\
+\textbf{Annual Recurring Revenue} & \textbf{\$360,000} & \textbf{\$780,000} & \textbf{\$1,470,000} \\
+Revenue Growth & --- & 117\% & 88\% \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Cost Structure}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{5cm}C{3.5cm}C{3.5cm}C{3.5cm}@{}}
+\toprule
+\textbf{Cost Category} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} \\
+\midrule
+LLM API costs (Claude) & \$36,000 & \$78,000 & \$132,000 \\
+Vector DB infrastructure & \$12,000 & \$18,000 & \$24,000 \\
+Engineering (1.5 FTE) & \$180,000 & \$200,000 & \$220,000 \\
+Product/Design (0.5 FTE) & \$60,000 & \$70,000 & \$80,000 \\
+Customer Success (0.5 FTE) & \$40,000 & \$60,000 & \$80,000 \\
+\midrule
+\textbf{Total Costs} & \textbf{\$328,000} & \textbf{\$426,000} & \textbf{\$536,000} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Profitability Analysis}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{5cm}C{3.5cm}C{3.5cm}C{3.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} \\
+\midrule
+Revenue & \$360,000 & \$780,000 & \$1,470,000 \\
+Costs & \$328,000 & \$426,000 & \$536,000 \\
+\textbf{Gross Profit} & \textbf{\$32,000} & \textbf{\$354,000} & \textbf{\$934,000} \\
+\textbf{Gross Margin} & \textbf{9\%} & \textbf{45\%} & \textbf{64\%} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Unit Economics}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{@{}L{5cm}L{4.5cm}X@{}}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Benchmark} \\
+\midrule
+Customer Acquisition Cost (CAC) & \$500 & Leveraging existing relationships \\
+Lifetime Value (LTV) & \$10,800 & 3-year avg. retention $\times$ \$300 ARPA \\
+LTV:CAC Ratio & 21.6:1 & >3:1 is healthy \\
+Payback Period & 1.7 months & <12 months is healthy \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================
+% RISK ANALYSIS
+% ============================================
+\newpage
+\section{Risk Analysis \& Mitigation}
+
+\subsection{Technical Risks}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3cm}C{1.8cm}C{1.5cm}L{6cm}@{}}
+\toprule
+\textbf{Risk} & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation} \\
+\midrule
+Data quality varies across customers & High & Medium & Implement graceful degradation; show confidence scores; fall back to broader network data when customer-specific data is sparse \\
+\addlinespace
+Accuracy insufficient initially & Medium & High & Human-in-the-loop design ensures service writers review all estimates; corrections serve as training signal to improve model \\
+\addlinespace
+Parts hallucination & Medium & High & Ground ALL parts suggestions in PartSmart catalog; never generate part numbers; validate against catalog before display \\
+\addlinespace
+LLM API reliability/latency & Low & Medium & Implement caching for common patterns; graceful degradation to rule-based fallback; consider redundant providers \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Business Risks}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3cm}C{1.8cm}C{1.5cm}L{6cm}@{}}
+\toprule
+\textbf{Risk} & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation} \\
+\midrule
+Low initial adoption & Medium & Medium & Start with design partners who are already advocates; offer ``shadow mode'' to reduce risk; strong ROI story \\
+\addlinespace
+Liability concerns for inaccurate estimates & Medium & High & Position as recommendation tool; all estimates reviewed by humans; include disclaimers in ToS \\
+\addlinespace
+Competitive response & Low & Medium & First-mover advantage + data moat; continue rapid iteration; leverage Valsoft AI Labs \\
+\addlinespace
+Pricing pressure & Low & Low & Strong ROI justification; value-based pricing; tiered structure allows flexibility \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Operational Risks}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}L{3cm}C{1.8cm}C{1.5cm}L{6cm}@{}}
+\toprule
+\textbf{Risk} & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation} \\
+\midrule
+Customer support burden & Medium & Medium & Invest in onboarding materials; build self-service documentation; phase rollout to manage support load \\
+\addlinespace
+Integration complexity & Low & Medium & Tight integration with existing DockMaster infrastructure; leverage existing API patterns \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================
+% APPENDIX
+% ============================================
+\newpage
+\section{Appendix: Source Citations}
+
+\subsection*{Sources}
+
+\textbf{[1] Fieldproxy --- ``25 Field Service Management Statistics''}
+\begin{itemize}[leftmargin=*]
+    \item \url{https://www.fieldproxy.ai/blog/25-field-service-management-statistics-that-will-change-how-you-run-yo-d1-39}
+    \item Statistics: 2--3 hours daily on paperwork, 45-minute approval delays, 68\% report downtime impacts revenue
+\end{itemize}
+
+\textbf{[2] DockMaster Blog --- ``Why Marine Repair Shops Lose Hours Daily''}
+\begin{itemize}[leftmargin=*]
+    \item \url{https://www.dockmaster.com/blog/marine-repair-software}
+    \item Statistics: \$14,667/month lost hours (illustrative calculation), workflow inefficiency descriptions
+\end{itemize}
+
+\textbf{[3] PMarket Research --- ``Cargo Ship Repairing Market Report 2026''}
+\begin{itemize}[leftmargin=*]
+    \item \url{https://pmarketresearch.com/worldwide-cargo-ship-repairing-market-research-2024-by-type-application-participants-and-countries-forecast-to-2030/}
+    \item Statistics: 60\% of ship owners experience supply chain delays
+\end{itemize}
+
+\end{document}

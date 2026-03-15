@@ -1,0 +1,3820 @@
+[
+  {
+    "work_order_id": "WO-2025-0001",
+    "vessel_type": "Runabout",
+    "loa": 18.2,
+    "loa_range": "15-20",
+    "year": 2013,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.0,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1204",
+        "description": "Generic Marine Part 1204",
+        "quantity": 1,
+        "unit_price": 53.7
+      },
+      {
+        "part_number": "OIL-1023",
+        "description": "Yamaha Engine Oil 10W-40",
+        "quantity": 1,
+        "unit_price": 32.72
+      },
+      {
+        "part_number": "OIL-1022",
+        "description": "Yamaha Engine Oil 10W-30",
+        "quantity": 1,
+        "unit_price": 37.16
+      }
+    ],
+    "total_labor_hours": 3.0,
+    "total_parts_cost": 123.58,
+    "total_invoice": 468.58,
+    "completion_date": "2025-08-12",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0002",
+    "vessel_type": "Runabout",
+    "loa": 21.4,
+    "loa_range": "20-25",
+    "year": 2022,
+    "engine_make": "MerCruiser",
+    "engine_model": "4.3L MPI",
+    "service_category": "inboard",
+    "service_description": "Transmission service",
+    "labor_items": [
+      {
+        "task": "Transmission service",
+        "hours": 2.7,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1274",
+        "description": "Generic Marine Part 1274",
+        "quantity": 2,
+        "unit_price": 22.08
+      }
+    ],
+    "total_labor_hours": 2.7,
+    "total_parts_cost": 44.16,
+    "total_invoice": 354.66,
+    "completion_date": "2025-02-24",
+    "region": "Gulf Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0003",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 27.2,
+    "loa_range": "25-30",
+    "year": 2015,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 2.2,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1163",
+        "description": "Generic Marine Part 1163",
+        "quantity": 2,
+        "unit_price": 91.48
+      },
+      {
+        "part_number": "OIL-1026",
+        "description": "Quicksilver Engine Oil 10W-30",
+        "quantity": 1,
+        "unit_price": 31.22
+      },
+      {
+        "part_number": "GEN-1282",
+        "description": "Generic Marine Part 1282",
+        "quantity": 2,
+        "unit_price": 67.07
+      }
+    ],
+    "total_labor_hours": 2.2,
+    "total_parts_cost": 348.32,
+    "total_invoice": 645.32,
+    "completion_date": "2024-06-01",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0004",
+    "vessel_type": "Center Console",
+    "loa": 28.3,
+    "loa_range": "25-30",
+    "year": 2016,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "engine",
+    "service_description": "Engine diagnostic",
+    "labor_items": [
+      {
+        "task": "Engine diagnostic",
+        "hours": 1.7,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1035",
+        "description": "Mobil 1 Engine Oil 10W-40",
+        "quantity": 1,
+        "unit_price": 42.24
+      },
+      {
+        "part_number": "MSC-1157",
+        "description": "Throttle Cable",
+        "quantity": 2,
+        "unit_price": 97.05
+      }
+    ],
+    "total_labor_hours": 1.7,
+    "total_parts_cost": 236.34,
+    "total_invoice": 448.84,
+    "completion_date": "2024-12-22",
+    "region": "Great Lakes",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0005",
+    "vessel_type": "Center Console",
+    "loa": 21.6,
+    "loa_range": "20-25",
+    "year": 2016,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 2.4,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1258",
+        "description": "Generic Marine Part 1258",
+        "quantity": 1,
+        "unit_price": 33.86
+      },
+      {
+        "part_number": "ZNC-1097",
+        "description": "Yamaha Hull Zinc",
+        "quantity": 1,
+        "unit_price": 24.86
+      },
+      {
+        "part_number": "GEN-1232",
+        "description": "Generic Marine Part 1232",
+        "quantity": 2,
+        "unit_price": 63.54
+      }
+    ],
+    "total_labor_hours": 2.4,
+    "total_parts_cost": 185.8,
+    "total_invoice": 461.8,
+    "completion_date": "2025-04-05",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2026-0006",
+    "vessel_type": "Pontoon Boat",
+    "loa": 21.3,
+    "loa_range": "20-25",
+    "year": 2015,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "engine",
+    "service_description": "Full engine tune-up",
+    "labor_items": [
+      {
+        "task": "Full engine tune-up",
+        "hours": 3.4,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1031",
+        "description": "Pennzoil Marine Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 46.5
+      },
+      {
+        "part_number": "SEA-1150",
+        "description": "Fuel Stabilizer",
+        "quantity": 1,
+        "unit_price": 24.93
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 117.93,
+    "total_invoice": 610.93,
+    "completion_date": "2026-01-13",
+    "region": "Great Lakes",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0007",
+    "vessel_type": "Sailboat",
+    "loa": 38.3,
+    "loa_range": "35-40",
+    "year": 2019,
+    "engine_make": "Yamaha",
+    "engine_model": "F200",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.2,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1245",
+        "description": "Generic Marine Part 1245",
+        "quantity": 2,
+        "unit_price": 74.45
+      },
+      {
+        "part_number": "GEN-1205",
+        "description": "Generic Marine Part 1205",
+        "quantity": 1,
+        "unit_price": 29.23
+      },
+      {
+        "part_number": "GEN-1198",
+        "description": "Generic Marine Part 1198",
+        "quantity": 1,
+        "unit_price": 99.93
+      }
+    ],
+    "total_labor_hours": 3.2,
+    "total_parts_cost": 278.06,
+    "total_invoice": 710.06,
+    "completion_date": "2025-08-16",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2026-0008",
+    "vessel_type": "Runabout",
+    "loa": 22.5,
+    "loa_range": "20-25",
+    "year": 2008,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "hull",
+    "service_description": "Zinc anode replacement",
+    "labor_items": [
+      {
+        "task": "Zinc anode replacement",
+        "hours": 1.7,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1031",
+        "description": "Pennzoil Marine Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 46.5
+      },
+      {
+        "part_number": "GEN-1194",
+        "description": "Generic Marine Part 1194",
+        "quantity": 2,
+        "unit_price": 49.87
+      },
+      {
+        "part_number": "GEN-1193",
+        "description": "Generic Marine Part 1193",
+        "quantity": 1,
+        "unit_price": 93.08
+      }
+    ],
+    "total_labor_hours": 1.7,
+    "total_parts_cost": 285.82,
+    "total_invoice": 532.32,
+    "completion_date": "2026-02-07",
+    "region": "Pacific Northwest",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0009",
+    "vessel_type": "Runabout",
+    "loa": 22.1,
+    "loa_range": "20-25",
+    "year": 2022,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-260",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 1.6,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1212",
+        "description": "Generic Marine Part 1212",
+        "quantity": 1,
+        "unit_price": 50.94
+      }
+    ],
+    "total_labor_hours": 1.6,
+    "total_parts_cost": 50.94,
+    "total_invoice": 282.94,
+    "completion_date": "2024-12-07",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0010",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 30.1,
+    "loa_range": "30-35",
+    "year": 2008,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "diagnostic",
+    "service_description": "Overheating diagnosis",
+    "labor_items": [
+      {
+        "task": "Overheating diagnosis",
+        "hours": 1.9,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1193",
+        "description": "Generic Marine Part 1193",
+        "quantity": 1,
+        "unit_price": 93.08
+      }
+    ],
+    "total_labor_hours": 1.9,
+    "total_parts_cost": 93.08,
+    "total_invoice": 330.58,
+    "completion_date": "2025-09-16",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0011",
+    "vessel_type": "Runabout",
+    "loa": 21.6,
+    "loa_range": "20-25",
+    "year": 2020,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 2.2,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1029",
+        "description": "Quicksilver Engine Oil 5W-30",
+        "quantity": 1,
+        "unit_price": 43.48
+      }
+    ],
+    "total_labor_hours": 2.2,
+    "total_parts_cost": 43.48,
+    "total_invoice": 340.48,
+    "completion_date": "2025-10-14",
+    "region": "Northeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0012",
+    "vessel_type": "Runabout",
+    "loa": 22.4,
+    "loa_range": "20-25",
+    "year": 2007,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.1,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1233",
+        "description": "Generic Marine Part 1233",
+        "quantity": 2,
+        "unit_price": 70.76
+      },
+      {
+        "part_number": "GEN-1253",
+        "description": "Generic Marine Part 1253",
+        "quantity": 1,
+        "unit_price": 51.24
+      }
+    ],
+    "total_labor_hours": 3.1,
+    "total_parts_cost": 192.76,
+    "total_invoice": 580.26,
+    "completion_date": "2025-09-16",
+    "region": "Pacific Northwest",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0013",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 32.1,
+    "loa_range": "30-35",
+    "year": 2017,
+    "engine_make": "Honda",
+    "engine_model": "BF250",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 2.2,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1161",
+        "description": "Marine Sealant 3M 4200",
+        "quantity": 1,
+        "unit_price": 19.3
+      }
+    ],
+    "total_labor_hours": 2.2,
+    "total_parts_cost": 19.3,
+    "total_invoice": 338.3,
+    "completion_date": "2024-05-17",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0014",
+    "vessel_type": "Runabout",
+    "loa": 21.5,
+    "loa_range": "20-25",
+    "year": 2012,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "engine",
+    "service_description": "Oil and filter change",
+    "labor_items": [
+      {
+        "task": "Oil and filter change",
+        "hours": 1.0,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1032",
+        "description": "Pennzoil Marine Engine Oil 15W-40",
+        "quantity": 1,
+        "unit_price": 41.86
+      }
+    ],
+    "total_labor_hours": 1.0,
+    "total_parts_cost": 41.86,
+    "total_invoice": 156.86,
+    "completion_date": "2025-02-14",
+    "region": "Northeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0015",
+    "vessel_type": "Pontoon Boat",
+    "loa": 21.4,
+    "loa_range": "20-25",
+    "year": 2020,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.2,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1296",
+        "description": "Generic Marine Part 1296",
+        "quantity": 2,
+        "unit_price": 48.48
+      }
+    ],
+    "total_labor_hours": 3.2,
+    "total_parts_cost": 96.96,
+    "total_invoice": 560.96,
+    "completion_date": "2025-05-03",
+    "region": "Southeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0016",
+    "vessel_type": "Runabout",
+    "loa": 18.6,
+    "loa_range": "15-20",
+    "year": 2018,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 3.4,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1263",
+        "description": "Generic Marine Part 1263",
+        "quantity": 1,
+        "unit_price": 24.19
+      },
+      {
+        "part_number": "GEN-1261",
+        "description": "Generic Marine Part 1261",
+        "quantity": 2,
+        "unit_price": 89.12
+      },
+      {
+        "part_number": "SPK-1046",
+        "description": "Spark Plug for Volvo Penta D4-260",
+        "quantity": 2,
+        "unit_price": 10.61
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 223.65,
+    "total_invoice": 614.65,
+    "completion_date": "2024-07-02",
+    "region": "Southeast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0017",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 26.9,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Yamaha",
+    "engine_model": "F200",
+    "service_category": "hull",
+    "service_description": "Zinc anode replacement",
+    "labor_items": [
+      {
+        "task": "Zinc anode replacement",
+        "hours": 1.3,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1209",
+        "description": "Generic Marine Part 1209",
+        "quantity": 1,
+        "unit_price": 98.67
+      }
+    ],
+    "total_labor_hours": 1.3,
+    "total_parts_cost": 98.67,
+    "total_invoice": 261.17,
+    "completion_date": "2024-05-03",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0018",
+    "vessel_type": "Pontoon Boat",
+    "loa": 25.0,
+    "loa_range": "25-30",
+    "year": 2007,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 4.0,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1030",
+        "description": "Pennzoil Marine Engine Oil 10W-30",
+        "quantity": 2,
+        "unit_price": 48.36
+      },
+      {
+        "part_number": "PNT-1092",
+        "description": "West Marine Primer",
+        "quantity": 1,
+        "unit_price": 177.12
+      }
+    ],
+    "total_labor_hours": 4.0,
+    "total_parts_cost": 273.84,
+    "total_invoice": 773.84,
+    "completion_date": "2025-04-16",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0019",
+    "vessel_type": "Sailboat",
+    "loa": 29.3,
+    "loa_range": "25-30",
+    "year": 2022,
+    "engine_make": "Honda",
+    "engine_model": "BF250",
+    "service_category": "inboard",
+    "service_description": "Raw water pump rebuild",
+    "labor_items": [
+      {
+        "task": "Raw water pump rebuild",
+        "hours": 1.8,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1029",
+        "description": "Quicksilver Engine Oil 5W-30",
+        "quantity": 1,
+        "unit_price": 43.48
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 43.48,
+    "total_invoice": 286.48,
+    "completion_date": "2025-01-28",
+    "region": "Northeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2026-0020",
+    "vessel_type": "Runabout",
+    "loa": 21.5,
+    "loa_range": "20-25",
+    "year": 2021,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "engine",
+    "service_description": "Full engine tune-up",
+    "labor_items": [
+      {
+        "task": "Full engine tune-up",
+        "hours": 3.7,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1032",
+        "description": "Pennzoil Marine Engine Oil 15W-40",
+        "quantity": 1,
+        "unit_price": 41.86
+      }
+    ],
+    "total_labor_hours": 3.7,
+    "total_parts_cost": 41.86,
+    "total_invoice": 467.36,
+    "completion_date": "2026-02-02",
+    "region": "Southeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0021",
+    "vessel_type": "Sailboat",
+    "loa": 26.8,
+    "loa_range": "25-30",
+    "year": 2023,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "diagnostic",
+    "service_description": "No-start troubleshooting",
+    "labor_items": [
+      {
+        "task": "No-start troubleshooting",
+        "hours": 1.6,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1264",
+        "description": "Generic Marine Part 1264",
+        "quantity": 2,
+        "unit_price": 85.03
+      },
+      {
+        "part_number": "GEN-1245",
+        "description": "Generic Marine Part 1245",
+        "quantity": 2,
+        "unit_price": 74.45
+      }
+    ],
+    "total_labor_hours": 1.6,
+    "total_parts_cost": 318.96,
+    "total_invoice": 502.96,
+    "completion_date": "2024-10-08",
+    "region": "Pacific Northwest",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0022",
+    "vessel_type": "Center Console",
+    "loa": 22.4,
+    "loa_range": "20-25",
+    "year": 2017,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "diagnostic",
+    "service_description": "Overheating diagnosis",
+    "labor_items": [
+      {
+        "task": "Overheating diagnosis",
+        "hours": 1.4,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "FLT-1005",
+        "description": "Yamaha Air Filter",
+        "quantity": 2,
+        "unit_price": 45.32
+      }
+    ],
+    "total_labor_hours": 1.4,
+    "total_parts_cost": 90.64,
+    "total_invoice": 279.64,
+    "completion_date": "2025-12-09",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0023",
+    "vessel_type": "Runabout",
+    "loa": 18.4,
+    "loa_range": "15-20",
+    "year": 2011,
+    "engine_make": "Suzuki",
+    "engine_model": "DF200",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.4,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1192",
+        "description": "Generic Marine Part 1192",
+        "quantity": 2,
+        "unit_price": 32.47
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 64.94,
+    "total_invoice": 455.94,
+    "completion_date": "2024-08-21",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0024",
+    "vessel_type": "Pontoon Boat",
+    "loa": 24.2,
+    "loa_range": "20-25",
+    "year": 2021,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "annual",
+    "service_description": "Winterization",
+    "labor_items": [
+      {
+        "task": "Winterization",
+        "hours": 3.0,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1163",
+        "description": "Generic Marine Part 1163",
+        "quantity": 1,
+        "unit_price": 91.48
+      }
+    ],
+    "total_labor_hours": 3.0,
+    "total_parts_cost": 91.48,
+    "total_invoice": 436.48,
+    "completion_date": "2024-06-30",
+    "region": "Pacific Northwest",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0025",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.9,
+    "loa_range": "20-25",
+    "year": 2014,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 1.7,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1223",
+        "description": "Generic Marine Part 1223",
+        "quantity": 1,
+        "unit_price": 77.31
+      },
+      {
+        "part_number": "GEN-1162",
+        "description": "Generic Marine Part 1162",
+        "quantity": 2,
+        "unit_price": 30.59
+      },
+      {
+        "part_number": "OIL-1028",
+        "description": "Quicksilver Engine Oil 15W-40",
+        "quantity": 2,
+        "unit_price": 49.33
+      }
+    ],
+    "total_labor_hours": 1.7,
+    "total_parts_cost": 237.15,
+    "total_invoice": 466.65,
+    "completion_date": "2024-04-27",
+    "region": "Northeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0026",
+    "vessel_type": "Center Console",
+    "loa": 27.7,
+    "loa_range": "25-30",
+    "year": 2013,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "inboard",
+    "service_description": "Transmission service",
+    "labor_items": [
+      {
+        "task": "Transmission service",
+        "hours": 3.0,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "FLT-1005",
+        "description": "Yamaha Air Filter",
+        "quantity": 1,
+        "unit_price": 45.32
+      },
+      {
+        "part_number": "BLT-1066",
+        "description": "Yamaha Alternator Belt",
+        "quantity": 1,
+        "unit_price": 35.25
+      },
+      {
+        "part_number": "OIL-1034",
+        "description": "Mobil 1 Engine Oil 10W-30",
+        "quantity": 2,
+        "unit_price": 38.07
+      }
+    ],
+    "total_labor_hours": 3.0,
+    "total_parts_cost": 156.71,
+    "total_invoice": 591.71,
+    "completion_date": "2025-10-30",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0027",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 29.3,
+    "loa_range": "25-30",
+    "year": 2006,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "engine",
+    "service_description": "Full engine tune-up",
+    "labor_items": [
+      {
+        "task": "Full engine tune-up",
+        "hours": 4.2,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1159",
+        "description": "Steering Cable",
+        "quantity": 2,
+        "unit_price": 114.21
+      },
+      {
+        "part_number": "GEN-1266",
+        "description": "Generic Marine Part 1266",
+        "quantity": 2,
+        "unit_price": 65.04
+      },
+      {
+        "part_number": "IMP-1058",
+        "description": "Volvo Penta Water Pump Impeller Kit",
+        "quantity": 1,
+        "unit_price": 59.06
+      }
+    ],
+    "total_labor_hours": 4.2,
+    "total_parts_cost": 417.56,
+    "total_invoice": 942.56,
+    "completion_date": "2024-11-10",
+    "region": "Southeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0028",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 33.8,
+    "loa_range": "30-35",
+    "year": 2005,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 3.1,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1284",
+        "description": "Generic Marine Part 1284",
+        "quantity": 1,
+        "unit_price": 53.96
+      },
+      {
+        "part_number": "MSC-1159",
+        "description": "Steering Cable",
+        "quantity": 1,
+        "unit_price": 114.21
+      },
+      {
+        "part_number": "GEN-1164",
+        "description": "Generic Marine Part 1164",
+        "quantity": 2,
+        "unit_price": 87.36
+      }
+    ],
+    "total_labor_hours": 3.1,
+    "total_parts_cost": 342.89,
+    "total_invoice": 792.39,
+    "completion_date": "2024-04-21",
+    "region": "Great Lakes",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0029",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 27.0,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "electrical",
+    "service_description": "Electrical troubleshooting",
+    "labor_items": [
+      {
+        "task": "Electrical troubleshooting",
+        "hours": 1.9,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1180",
+        "description": "Generic Marine Part 1180",
+        "quantity": 1,
+        "unit_price": 75.61
+      },
+      {
+        "part_number": "GEN-1167",
+        "description": "Generic Marine Part 1167",
+        "quantity": 2,
+        "unit_price": 70.2
+      }
+    ],
+    "total_labor_hours": 1.9,
+    "total_parts_cost": 216.01,
+    "total_invoice": 453.51,
+    "completion_date": "2025-03-07",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0030",
+    "vessel_type": "Pontoon Boat",
+    "loa": 22.4,
+    "loa_range": "20-25",
+    "year": 2022,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-300",
+    "service_category": "hull",
+    "service_description": "Hull cleaning and bottom paint",
+    "labor_items": [
+      {
+        "task": "Hull cleaning and bottom paint",
+        "hours": 7.1,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1244",
+        "description": "Generic Marine Part 1244",
+        "quantity": 2,
+        "unit_price": 28.37
+      }
+    ],
+    "total_labor_hours": 7.1,
+    "total_parts_cost": 56.74,
+    "total_invoice": 1015.24,
+    "completion_date": "2024-04-21",
+    "region": "Northeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0031",
+    "vessel_type": "Pontoon Boat",
+    "loa": 22.6,
+    "loa_range": "20-25",
+    "year": 2015,
+    "engine_make": "MerCruiser",
+    "engine_model": "6.2L MPI",
+    "service_category": "annual",
+    "service_description": "Spring commissioning",
+    "labor_items": [
+      {
+        "task": "Spring commissioning",
+        "hours": 4.2,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1026",
+        "description": "Quicksilver Engine Oil 10W-30",
+        "quantity": 2,
+        "unit_price": 31.22
+      },
+      {
+        "part_number": "GEN-1277",
+        "description": "Generic Marine Part 1277",
+        "quantity": 1,
+        "unit_price": 59.78
+      }
+    ],
+    "total_labor_hours": 4.2,
+    "total_parts_cost": 122.22,
+    "total_invoice": 647.22,
+    "completion_date": "2025-08-27",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2026-0032",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 28.6,
+    "loa_range": "25-30",
+    "year": 2007,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "diagnostic",
+    "service_description": "No-start troubleshooting",
+    "labor_items": [
+      {
+        "task": "No-start troubleshooting",
+        "hours": 2.1,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1174",
+        "description": "Generic Marine Part 1174",
+        "quantity": 2,
+        "unit_price": 82.66
+      },
+      {
+        "part_number": "GEN-1227",
+        "description": "Generic Marine Part 1227",
+        "quantity": 2,
+        "unit_price": 86.73
+      },
+      {
+        "part_number": "GEN-1177",
+        "description": "Generic Marine Part 1177",
+        "quantity": 2,
+        "unit_price": 48.78
+      }
+    ],
+    "total_labor_hours": 2.1,
+    "total_parts_cost": 436.34,
+    "total_invoice": 677.84,
+    "completion_date": "2026-02-24",
+    "region": "Gulf Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0033",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.8,
+    "loa_range": "20-25",
+    "year": 2018,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "hull",
+    "service_description": "Zinc anode replacement",
+    "labor_items": [
+      {
+        "task": "Zinc anode replacement",
+        "hours": 1.5,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1238",
+        "description": "Generic Marine Part 1238",
+        "quantity": 2,
+        "unit_price": 63.5
+      },
+      {
+        "part_number": "FLT-1015",
+        "description": "Honda Oil Filter",
+        "quantity": 2,
+        "unit_price": 49.15
+      }
+    ],
+    "total_labor_hours": 1.5,
+    "total_parts_cost": 225.3,
+    "total_invoice": 427.8,
+    "completion_date": "2024-10-14",
+    "region": "Great Lakes",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0034",
+    "vessel_type": "Pontoon Boat",
+    "loa": 23.6,
+    "loa_range": "20-25",
+    "year": 2015,
+    "engine_make": "MerCruiser",
+    "engine_model": "5.0L MPI",
+    "service_category": "inboard",
+    "service_description": "Transmission service",
+    "labor_items": [
+      {
+        "task": "Transmission service",
+        "hours": 2.9,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ZNC-1105",
+        "description": "MerCruiser Hull Zinc",
+        "quantity": 2,
+        "unit_price": 28.22
+      },
+      {
+        "part_number": "GEN-1264",
+        "description": "Generic Marine Part 1264",
+        "quantity": 2,
+        "unit_price": 85.03
+      },
+      {
+        "part_number": "OIL-1036",
+        "description": "Mobil 1 Engine Oil 15W-40",
+        "quantity": 1,
+        "unit_price": 48.9
+      }
+    ],
+    "total_labor_hours": 2.9,
+    "total_parts_cost": 275.4,
+    "total_invoice": 695.9,
+    "completion_date": "2024-11-08",
+    "region": "Pacific Northwest",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0035",
+    "vessel_type": "Center Console",
+    "loa": 22.2,
+    "loa_range": "20-25",
+    "year": 2011,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "engine",
+    "service_description": "Full engine tune-up",
+    "labor_items": [
+      {
+        "task": "Full engine tune-up",
+        "hours": 2.7,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1292",
+        "description": "Generic Marine Part 1292",
+        "quantity": 2,
+        "unit_price": 67.33
+      },
+      {
+        "part_number": "OIL-1033",
+        "description": "Pennzoil Marine Engine Oil 5W-30",
+        "quantity": 1,
+        "unit_price": 52.34
+      },
+      {
+        "part_number": "GEN-1212",
+        "description": "Generic Marine Part 1212",
+        "quantity": 2,
+        "unit_price": 50.94
+      }
+    ],
+    "total_labor_hours": 2.7,
+    "total_parts_cost": 288.88,
+    "total_invoice": 680.38,
+    "completion_date": "2025-08-01",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0036",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 26.5,
+    "loa_range": "25-30",
+    "year": 2005,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "electrical",
+    "service_description": "Electrical troubleshooting",
+    "labor_items": [
+      {
+        "task": "Electrical troubleshooting",
+        "hours": 1.8,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1238",
+        "description": "Generic Marine Part 1238",
+        "quantity": 1,
+        "unit_price": 63.5
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 63.5,
+    "total_invoice": 324.5,
+    "completion_date": "2024-07-15",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0037",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 33.0,
+    "loa_range": "30-35",
+    "year": 2021,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 3.4,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1282",
+        "description": "Generic Marine Part 1282",
+        "quantity": 2,
+        "unit_price": 67.07
+      },
+      {
+        "part_number": "GEN-1227",
+        "description": "Generic Marine Part 1227",
+        "quantity": 1,
+        "unit_price": 86.73
+      },
+      {
+        "part_number": "GEN-1207",
+        "description": "Generic Marine Part 1207",
+        "quantity": 2,
+        "unit_price": 15.27
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 251.41,
+    "total_invoice": 744.41,
+    "completion_date": "2025-06-16",
+    "region": "Gulf Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0038",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 33.4,
+    "loa_range": "30-35",
+    "year": 2013,
+    "engine_make": "Suzuki",
+    "engine_model": "DF200",
+    "service_category": "diagnostic",
+    "service_description": "Overheating diagnosis",
+    "labor_items": [
+      {
+        "task": "Overheating diagnosis",
+        "hours": 1.6,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1280",
+        "description": "Generic Marine Part 1280",
+        "quantity": 2,
+        "unit_price": 74.58
+      }
+    ],
+    "total_labor_hours": 1.6,
+    "total_parts_cost": 149.16,
+    "total_invoice": 381.16,
+    "completion_date": "2024-11-08",
+    "region": "Gulf Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0039",
+    "vessel_type": "Center Console",
+    "loa": 23.2,
+    "loa_range": "20-25",
+    "year": 2022,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 2.4,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "SEA-1150",
+        "description": "Fuel Stabilizer",
+        "quantity": 2,
+        "unit_price": 24.93
+      },
+      {
+        "part_number": "OIL-1031",
+        "description": "Pennzoil Marine Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 46.5
+      },
+      {
+        "part_number": "GEN-1202",
+        "description": "Generic Marine Part 1202",
+        "quantity": 2,
+        "unit_price": 86.37
+      }
+    ],
+    "total_labor_hours": 2.4,
+    "total_parts_cost": 315.6,
+    "total_invoice": 615.6,
+    "completion_date": "2025-05-12",
+    "region": "Northeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0040",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 33.3,
+    "loa_range": "30-35",
+    "year": 2017,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "engine",
+    "service_description": "Oil and filter change",
+    "labor_items": [
+      {
+        "task": "Oil and filter change",
+        "hours": 2.2,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "FLT-1013",
+        "description": "Suzuki Fuel Filter",
+        "quantity": 2,
+        "unit_price": 24.36
+      },
+      {
+        "part_number": "GEN-1188",
+        "description": "Generic Marine Part 1188",
+        "quantity": 2,
+        "unit_price": 27.11
+      }
+    ],
+    "total_labor_hours": 2.2,
+    "total_parts_cost": 102.94,
+    "total_invoice": 421.94,
+    "completion_date": "2025-05-16",
+    "region": "West Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0041",
+    "vessel_type": "Pontoon Boat",
+    "loa": 24.8,
+    "loa_range": "20-25",
+    "year": 2012,
+    "engine_make": "MerCruiser",
+    "engine_model": "4.3L MPI",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 2.1,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1182",
+        "description": "Generic Marine Part 1182",
+        "quantity": 2,
+        "unit_price": 98.56
+      },
+      {
+        "part_number": "GEN-1267",
+        "description": "Generic Marine Part 1267",
+        "quantity": 1,
+        "unit_price": 98.84
+      }
+    ],
+    "total_labor_hours": 2.1,
+    "total_parts_cost": 295.96,
+    "total_invoice": 537.46,
+    "completion_date": "2025-07-04",
+    "region": "Southeast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0042",
+    "vessel_type": "Pontoon Boat",
+    "loa": 23.2,
+    "loa_range": "20-25",
+    "year": 2017,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "engine",
+    "service_description": "Oil and filter change",
+    "labor_items": [
+      {
+        "task": "Oil and filter change",
+        "hours": 1.0,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1216",
+        "description": "Generic Marine Part 1216",
+        "quantity": 1,
+        "unit_price": 60.01
+      }
+    ],
+    "total_labor_hours": 1.0,
+    "total_parts_cost": 60.01,
+    "total_invoice": 205.01,
+    "completion_date": "2024-05-03",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0043",
+    "vessel_type": "Sailboat",
+    "loa": 29.9,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 2.7,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1035",
+        "description": "Mobil 1 Engine Oil 10W-40",
+        "quantity": 1,
+        "unit_price": 42.24
+      },
+      {
+        "part_number": "GEN-1216",
+        "description": "Generic Marine Part 1216",
+        "quantity": 1,
+        "unit_price": 60.01
+      }
+    ],
+    "total_labor_hours": 2.7,
+    "total_parts_cost": 102.25,
+    "total_invoice": 493.75,
+    "completion_date": "2025-03-06",
+    "region": "Southeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2026-0044",
+    "vessel_type": "Runabout",
+    "loa": 22.7,
+    "loa_range": "20-25",
+    "year": 2006,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "electrical",
+    "service_description": "Battery replacement",
+    "labor_items": [
+      {
+        "task": "Battery replacement",
+        "hours": 1.3,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ELC-1082",
+        "description": "Battery Terminal Kit",
+        "quantity": 2,
+        "unit_price": 20.01
+      }
+    ],
+    "total_labor_hours": 1.3,
+    "total_parts_cost": 40.02,
+    "total_invoice": 202.52,
+    "completion_date": "2026-01-27",
+    "region": "Northeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0045",
+    "vessel_type": "Pontoon Boat",
+    "loa": 25.7,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 1.7,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1177",
+        "description": "Generic Marine Part 1177",
+        "quantity": 1,
+        "unit_price": 48.78
+      }
+    ],
+    "total_labor_hours": 1.7,
+    "total_parts_cost": 48.78,
+    "total_invoice": 244.28,
+    "completion_date": "2025-10-26",
+    "region": "Northeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2026-0046",
+    "vessel_type": "Center Console",
+    "loa": 25.8,
+    "loa_range": "25-30",
+    "year": 2017,
+    "engine_make": "MerCruiser",
+    "engine_model": "6.2L MPI",
+    "service_category": "electrical",
+    "service_description": "Battery replacement",
+    "labor_items": [
+      {
+        "task": "Battery replacement",
+        "hours": 0.6,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1274",
+        "description": "Generic Marine Part 1274",
+        "quantity": 2,
+        "unit_price": 22.08
+      }
+    ],
+    "total_labor_hours": 0.6,
+    "total_parts_cost": 44.16,
+    "total_invoice": 119.16,
+    "completion_date": "2026-02-11",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0047",
+    "vessel_type": "Runabout",
+    "loa": 22.8,
+    "loa_range": "20-25",
+    "year": 2023,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "annual",
+    "service_description": "Winterization",
+    "labor_items": [
+      {
+        "task": "Winterization",
+        "hours": 3.2,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1225",
+        "description": "Generic Marine Part 1225",
+        "quantity": 2,
+        "unit_price": 62.57
+      }
+    ],
+    "total_labor_hours": 3.2,
+    "total_parts_cost": 125.14,
+    "total_invoice": 557.14,
+    "completion_date": "2024-03-25",
+    "region": "Great Lakes",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0048",
+    "vessel_type": "Sailboat",
+    "loa": 26.6,
+    "loa_range": "25-30",
+    "year": 2016,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "hull",
+    "service_description": "Gelcoat repair",
+    "labor_items": [
+      {
+        "task": "Gelcoat repair",
+        "hours": 3.0,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1235",
+        "description": "Generic Marine Part 1235",
+        "quantity": 2,
+        "unit_price": 20.78
+      },
+      {
+        "part_number": "GEN-1296",
+        "description": "Generic Marine Part 1296",
+        "quantity": 2,
+        "unit_price": 48.48
+      },
+      {
+        "part_number": "GEN-1221",
+        "description": "Generic Marine Part 1221",
+        "quantity": 2,
+        "unit_price": 62.12
+      }
+    ],
+    "total_labor_hours": 3.0,
+    "total_parts_cost": 262.76,
+    "total_invoice": 667.76,
+    "completion_date": "2025-02-06",
+    "region": "Southeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0049",
+    "vessel_type": "Runabout",
+    "loa": 19.7,
+    "loa_range": "15-20",
+    "year": 2019,
+    "engine_make": "Yamaha",
+    "engine_model": "F200",
+    "service_category": "annual",
+    "service_description": "Annual service package",
+    "labor_items": [
+      {
+        "task": "Annual service package",
+        "hours": 4.7,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1022",
+        "description": "Yamaha Engine Oil 10W-30",
+        "quantity": 2,
+        "unit_price": 37.16
+      },
+      {
+        "part_number": "GEN-1222",
+        "description": "Generic Marine Part 1222",
+        "quantity": 1,
+        "unit_price": 58.79
+      }
+    ],
+    "total_labor_hours": 4.7,
+    "total_parts_cost": 133.11,
+    "total_invoice": 814.61,
+    "completion_date": "2025-07-25",
+    "region": "Southeast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0050",
+    "vessel_type": "Center Console",
+    "loa": 28.0,
+    "loa_range": "25-30",
+    "year": 2015,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-260",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 2.5,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1157",
+        "description": "Throttle Cable",
+        "quantity": 2,
+        "unit_price": 97.05
+      }
+    ],
+    "total_labor_hours": 2.5,
+    "total_parts_cost": 194.1,
+    "total_invoice": 506.6,
+    "completion_date": "2025-07-26",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0051",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 31.9,
+    "loa_range": "30-35",
+    "year": 2020,
+    "engine_make": "MerCruiser",
+    "engine_model": "4.3L MPI",
+    "service_category": "engine",
+    "service_description": "Engine diagnostic",
+    "labor_items": [
+      {
+        "task": "Engine diagnostic",
+        "hours": 2.2,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1158",
+        "description": "Shift Cable",
+        "quantity": 2,
+        "unit_price": 68.4
+      },
+      {
+        "part_number": "GEN-1174",
+        "description": "Generic Marine Part 1174",
+        "quantity": 2,
+        "unit_price": 82.66
+      },
+      {
+        "part_number": "GEN-1265",
+        "description": "Generic Marine Part 1265",
+        "quantity": 2,
+        "unit_price": 73.31
+      }
+    ],
+    "total_labor_hours": 2.2,
+    "total_parts_cost": 448.74,
+    "total_invoice": 767.74,
+    "completion_date": "2025-05-22",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0052",
+    "vessel_type": "Pontoon Boat",
+    "loa": 22.0,
+    "loa_range": "20-25",
+    "year": 2019,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 1.7,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ELC-1080",
+        "description": "Marine Battery 12V Group 24",
+        "quantity": 1,
+        "unit_price": 206.13
+      },
+      {
+        "part_number": "GEN-1286",
+        "description": "Generic Marine Part 1286",
+        "quantity": 1,
+        "unit_price": 86.14
+      }
+    ],
+    "total_labor_hours": 1.7,
+    "total_parts_cost": 292.27,
+    "total_invoice": 504.77,
+    "completion_date": "2024-10-20",
+    "region": "Pacific Northwest",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0053",
+    "vessel_type": "Sailboat",
+    "loa": 29.1,
+    "loa_range": "25-30",
+    "year": 2023,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "mechanical",
+    "service_description": "Steering system service",
+    "labor_items": [
+      {
+        "task": "Steering system service",
+        "hours": 4.3,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1156",
+        "description": "Fuel Line Kit",
+        "quantity": 1,
+        "unit_price": 40.13
+      },
+      {
+        "part_number": "GEN-1190",
+        "description": "Generic Marine Part 1190",
+        "quantity": 2,
+        "unit_price": 47.96
+      }
+    ],
+    "total_labor_hours": 4.3,
+    "total_parts_cost": 136.05,
+    "total_invoice": 673.55,
+    "completion_date": "2024-03-27",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0054",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.8,
+    "loa_range": "20-25",
+    "year": 2006,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "mechanical",
+    "service_description": "Steering system service",
+    "labor_items": [
+      {
+        "task": "Steering system service",
+        "hours": 3.1,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1288",
+        "description": "Generic Marine Part 1288",
+        "quantity": 1,
+        "unit_price": 48.11
+      },
+      {
+        "part_number": "GEN-1221",
+        "description": "Generic Marine Part 1221",
+        "quantity": 2,
+        "unit_price": 62.12
+      },
+      {
+        "part_number": "IMP-1056",
+        "description": "Mercury Water Pump Impeller Kit",
+        "quantity": 2,
+        "unit_price": 59.68
+      }
+    ],
+    "total_labor_hours": 3.1,
+    "total_parts_cost": 291.71,
+    "total_invoice": 679.21,
+    "completion_date": "2025-07-16",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0055",
+    "vessel_type": "Center Console",
+    "loa": 21.8,
+    "loa_range": "20-25",
+    "year": 2006,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "hull",
+    "service_description": "Hull cleaning and bottom paint",
+    "labor_items": [
+      {
+        "task": "Hull cleaning and bottom paint",
+        "hours": 6.8,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1033",
+        "description": "Pennzoil Marine Engine Oil 5W-30",
+        "quantity": 1,
+        "unit_price": 52.34
+      },
+      {
+        "part_number": "GEN-1243",
+        "description": "Generic Marine Part 1243",
+        "quantity": 1,
+        "unit_price": 94.11
+      }
+    ],
+    "total_labor_hours": 6.8,
+    "total_parts_cost": 146.45,
+    "total_invoice": 1132.45,
+    "completion_date": "2024-08-12",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0056",
+    "vessel_type": "Center Console",
+    "loa": 20.9,
+    "loa_range": "20-25",
+    "year": 2012,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 3.9,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1193",
+        "description": "Generic Marine Part 1193",
+        "quantity": 2,
+        "unit_price": 93.08
+      },
+      {
+        "part_number": "GEN-1211",
+        "description": "Generic Marine Part 1211",
+        "quantity": 2,
+        "unit_price": 80.56
+      },
+      {
+        "part_number": "GEN-1209",
+        "description": "Generic Marine Part 1209",
+        "quantity": 2,
+        "unit_price": 98.67
+      }
+    ],
+    "total_labor_hours": 3.9,
+    "total_parts_cost": 544.62,
+    "total_invoice": 1032.12,
+    "completion_date": "2025-10-16",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0057",
+    "vessel_type": "Runabout",
+    "loa": 21.7,
+    "loa_range": "20-25",
+    "year": 2008,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "electrical",
+    "service_description": "Battery replacement",
+    "labor_items": [
+      {
+        "task": "Battery replacement",
+        "hours": 0.7,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1157",
+        "description": "Throttle Cable",
+        "quantity": 1,
+        "unit_price": 97.05
+      }
+    ],
+    "total_labor_hours": 0.7,
+    "total_parts_cost": 97.05,
+    "total_invoice": 177.55,
+    "completion_date": "2025-09-29",
+    "region": "Northeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2026-0058",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 25.0,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Honda",
+    "engine_model": "BF250",
+    "service_category": "inboard",
+    "service_description": "Raw water pump rebuild",
+    "labor_items": [
+      {
+        "task": "Raw water pump rebuild",
+        "hours": 1.8,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1278",
+        "description": "Generic Marine Part 1278",
+        "quantity": 2,
+        "unit_price": 34.5
+      },
+      {
+        "part_number": "GEN-1170",
+        "description": "Generic Marine Part 1170",
+        "quantity": 1,
+        "unit_price": 94.19
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 163.19,
+    "total_invoice": 388.19,
+    "completion_date": "2026-02-14",
+    "region": "Southeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0059",
+    "vessel_type": "Center Console",
+    "loa": 27.9,
+    "loa_range": "25-30",
+    "year": 2023,
+    "engine_make": "Honda",
+    "engine_model": "BF150",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 3.4,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ELC-1088",
+        "description": "LED Navigation Light Set",
+        "quantity": 1,
+        "unit_price": 90.9
+      },
+      {
+        "part_number": "GEN-1166",
+        "description": "Generic Marine Part 1166",
+        "quantity": 1,
+        "unit_price": 31.41
+      },
+      {
+        "part_number": "ELC-1086",
+        "description": "Bilge Pump 1000 GPH",
+        "quantity": 1,
+        "unit_price": 89.89
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 212.2,
+    "total_invoice": 637.2,
+    "completion_date": "2025-01-21",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0060",
+    "vessel_type": "Pontoon Boat",
+    "loa": 25.5,
+    "loa_range": "25-30",
+    "year": 2019,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "mechanical",
+    "service_description": "Steering system service",
+    "labor_items": [
+      {
+        "task": "Steering system service",
+        "hours": 3.4,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1234",
+        "description": "Generic Marine Part 1234",
+        "quantity": 1,
+        "unit_price": 31.16
+      },
+      {
+        "part_number": "GEN-1222",
+        "description": "Generic Marine Part 1222",
+        "quantity": 1,
+        "unit_price": 58.79
+      },
+      {
+        "part_number": "GEN-1208",
+        "description": "Generic Marine Part 1208",
+        "quantity": 2,
+        "unit_price": 44.1
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 178.15,
+    "total_invoice": 637.15,
+    "completion_date": "2025-02-06",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0061",
+    "vessel_type": "Center Console",
+    "loa": 20.3,
+    "loa_range": "20-25",
+    "year": 2012,
+    "engine_make": "Honda",
+    "engine_model": "BF250",
+    "service_category": "annual",
+    "service_description": "Annual service package",
+    "labor_items": [
+      {
+        "task": "Annual service package",
+        "hours": 5.3,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1025",
+        "description": "Yamaha Engine Oil 5W-30",
+        "quantity": 1,
+        "unit_price": 37.07
+      },
+      {
+        "part_number": "GEN-1293",
+        "description": "Generic Marine Part 1293",
+        "quantity": 2,
+        "unit_price": 33.57
+      },
+      {
+        "part_number": "GEN-1291",
+        "description": "Generic Marine Part 1291",
+        "quantity": 2,
+        "unit_price": 79.39
+      }
+    ],
+    "total_labor_hours": 5.3,
+    "total_parts_cost": 262.99,
+    "total_invoice": 978.49,
+    "completion_date": "2024-12-22",
+    "region": "Southeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2026-0062",
+    "vessel_type": "Pontoon Boat",
+    "loa": 22.6,
+    "loa_range": "20-25",
+    "year": 2020,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 1.8,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "IMP-1056",
+        "description": "Mercury Water Pump Impeller Kit",
+        "quantity": 2,
+        "unit_price": 59.68
+      },
+      {
+        "part_number": "PNT-1091",
+        "description": "Sea Hawk Ablative",
+        "quantity": 2,
+        "unit_price": 159.01
+      },
+      {
+        "part_number": "GEN-1180",
+        "description": "Generic Marine Part 1180",
+        "quantity": 2,
+        "unit_price": 75.61
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 588.6,
+    "total_invoice": 831.6,
+    "completion_date": "2026-01-20",
+    "region": "Great Lakes",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0063",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.2,
+    "loa_range": "20-25",
+    "year": 2007,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 1.5,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "FLT-1006",
+        "description": "Volvo Penta Oil Filter",
+        "quantity": 2,
+        "unit_price": 62.0
+      },
+      {
+        "part_number": "GEN-1264",
+        "description": "Generic Marine Part 1264",
+        "quantity": 2,
+        "unit_price": 85.03
+      },
+      {
+        "part_number": "GEN-1234",
+        "description": "Generic Marine Part 1234",
+        "quantity": 1,
+        "unit_price": 31.16
+      }
+    ],
+    "total_labor_hours": 1.5,
+    "total_parts_cost": 325.22,
+    "total_invoice": 542.72,
+    "completion_date": "2024-09-21",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0064",
+    "vessel_type": "Center Console",
+    "loa": 26.2,
+    "loa_range": "25-30",
+    "year": 2020,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "engine",
+    "service_description": "Full engine tune-up",
+    "labor_items": [
+      {
+        "task": "Full engine tune-up",
+        "hours": 2.9,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1210",
+        "description": "Generic Marine Part 1210",
+        "quantity": 2,
+        "unit_price": 33.86
+      },
+      {
+        "part_number": "GEN-1276",
+        "description": "Generic Marine Part 1276",
+        "quantity": 1,
+        "unit_price": 19.62
+      }
+    ],
+    "total_labor_hours": 2.9,
+    "total_parts_cost": 87.34,
+    "total_invoice": 449.84,
+    "completion_date": "2024-04-11",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0065",
+    "vessel_type": "Pontoon Boat",
+    "loa": 24.8,
+    "loa_range": "20-25",
+    "year": 2010,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-260",
+    "service_category": "engine",
+    "service_description": "Oil and filter change",
+    "labor_items": [
+      {
+        "task": "Oil and filter change",
+        "hours": 1.5,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "BLT-1070",
+        "description": "Volvo Penta Raw Water Hose",
+        "quantity": 2,
+        "unit_price": 33.97
+      }
+    ],
+    "total_labor_hours": 1.5,
+    "total_parts_cost": 67.94,
+    "total_invoice": 240.44,
+    "completion_date": "2024-07-11",
+    "region": "Pacific Northwest",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2024-0066",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 30.0,
+    "loa_range": "30-35",
+    "year": 2014,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 2.3,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "MSC-1160",
+        "description": "Marine Sealant 3M 5200",
+        "quantity": 1,
+        "unit_price": 15.7
+      },
+      {
+        "part_number": "GEN-1214",
+        "description": "Generic Marine Part 1214",
+        "quantity": 2,
+        "unit_price": 96.15
+      }
+    ],
+    "total_labor_hours": 2.3,
+    "total_parts_cost": 208.0,
+    "total_invoice": 541.5,
+    "completion_date": "2024-09-24",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0067",
+    "vessel_type": "Pontoon Boat",
+    "loa": 24.5,
+    "loa_range": "20-25",
+    "year": 2009,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 3.6,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1168",
+        "description": "Generic Marine Part 1168",
+        "quantity": 2,
+        "unit_price": 29.27
+      }
+    ],
+    "total_labor_hours": 3.6,
+    "total_parts_cost": 58.54,
+    "total_invoice": 544.54,
+    "completion_date": "2025-11-04",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0068",
+    "vessel_type": "Sailboat",
+    "loa": 38.0,
+    "loa_range": "35-40",
+    "year": 2019,
+    "engine_make": "Suzuki",
+    "engine_model": "DF200",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 2.3,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1180",
+        "description": "Generic Marine Part 1180",
+        "quantity": 1,
+        "unit_price": 75.61
+      },
+      {
+        "part_number": "GSK-1134",
+        "description": "Suzuki Water Pump Gasket Kit",
+        "quantity": 2,
+        "unit_price": 19.59
+      }
+    ],
+    "total_labor_hours": 2.3,
+    "total_parts_cost": 114.79,
+    "total_invoice": 448.29,
+    "completion_date": "2024-11-07",
+    "region": "Great Lakes",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0069",
+    "vessel_type": "Runabout",
+    "loa": 19.9,
+    "loa_range": "15-20",
+    "year": 2020,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 3.1,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1024",
+        "description": "Yamaha Engine Oil 15W-40",
+        "quantity": 2,
+        "unit_price": 51.96
+      },
+      {
+        "part_number": "ELC-1082",
+        "description": "Battery Terminal Kit",
+        "quantity": 1,
+        "unit_price": 20.01
+      }
+    ],
+    "total_labor_hours": 3.1,
+    "total_parts_cost": 123.93,
+    "total_invoice": 511.43,
+    "completion_date": "2025-06-06",
+    "region": "Northeast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0070",
+    "vessel_type": "Pontoon Boat",
+    "loa": 25.5,
+    "loa_range": "25-30",
+    "year": 2005,
+    "engine_make": "Honda",
+    "engine_model": "BF150",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 4.8,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1218",
+        "description": "Generic Marine Part 1218",
+        "quantity": 2,
+        "unit_price": 23.92
+      }
+    ],
+    "total_labor_hours": 4.8,
+    "total_parts_cost": 47.84,
+    "total_invoice": 647.84,
+    "completion_date": "2025-02-22",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0071",
+    "vessel_type": "Sailboat",
+    "loa": 34.7,
+    "loa_range": "30-35",
+    "year": 2015,
+    "engine_make": "Honda",
+    "engine_model": "BF250",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 4.1,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1024",
+        "description": "Yamaha Engine Oil 15W-40",
+        "quantity": 1,
+        "unit_price": 51.96
+      },
+      {
+        "part_number": "GEN-1256",
+        "description": "Generic Marine Part 1256",
+        "quantity": 2,
+        "unit_price": 16.58
+      },
+      {
+        "part_number": "OIL-1032",
+        "description": "Pennzoil Marine Engine Oil 15W-40",
+        "quantity": 1,
+        "unit_price": 41.86
+      }
+    ],
+    "total_labor_hours": 4.1,
+    "total_parts_cost": 126.98,
+    "total_invoice": 721.48,
+    "completion_date": "2024-06-13",
+    "region": "Great Lakes",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0072",
+    "vessel_type": "Runabout",
+    "loa": 22.6,
+    "loa_range": "20-25",
+    "year": 2008,
+    "engine_make": "MerCruiser",
+    "engine_model": "4.3L MPI",
+    "service_category": "mechanical",
+    "service_description": "Steering system service",
+    "labor_items": [
+      {
+        "task": "Steering system service",
+        "hours": 3.6,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1299",
+        "description": "Generic Marine Part 1299",
+        "quantity": 2,
+        "unit_price": 89.47
+      },
+      {
+        "part_number": "OIL-1029",
+        "description": "Quicksilver Engine Oil 5W-30",
+        "quantity": 2,
+        "unit_price": 43.48
+      }
+    ],
+    "total_labor_hours": 3.6,
+    "total_parts_cost": 265.9,
+    "total_invoice": 679.9,
+    "completion_date": "2025-03-31",
+    "region": "Great Lakes",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0073",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 27.4,
+    "loa_range": "25-30",
+    "year": 2018,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "hull",
+    "service_description": "Zinc anode replacement",
+    "labor_items": [
+      {
+        "task": "Zinc anode replacement",
+        "hours": 1.2,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1195",
+        "description": "Generic Marine Part 1195",
+        "quantity": 1,
+        "unit_price": 87.51
+      },
+      {
+        "part_number": "GEN-1256",
+        "description": "Generic Marine Part 1256",
+        "quantity": 2,
+        "unit_price": 16.58
+      },
+      {
+        "part_number": "GEN-1272",
+        "description": "Generic Marine Part 1272",
+        "quantity": 1,
+        "unit_price": 69.69
+      }
+    ],
+    "total_labor_hours": 1.2,
+    "total_parts_cost": 190.36,
+    "total_invoice": 328.36,
+    "completion_date": "2024-11-05",
+    "region": "Great Lakes",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0074",
+    "vessel_type": "Center Console",
+    "loa": 24.6,
+    "loa_range": "20-25",
+    "year": 2005,
+    "engine_make": "MerCruiser",
+    "engine_model": "5.0L MPI",
+    "service_category": "annual",
+    "service_description": "Winterization",
+    "labor_items": [
+      {
+        "task": "Winterization",
+        "hours": 2.8,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1246",
+        "description": "Generic Marine Part 1246",
+        "quantity": 2,
+        "unit_price": 31.47
+      },
+      {
+        "part_number": "GEN-1172",
+        "description": "Generic Marine Part 1172",
+        "quantity": 2,
+        "unit_price": 52.53
+      }
+    ],
+    "total_labor_hours": 2.8,
+    "total_parts_cost": 168.0,
+    "total_invoice": 574.0,
+    "completion_date": "2025-06-23",
+    "region": "Gulf Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0075",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 35.0,
+    "loa_range": "35-40",
+    "year": 2020,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 3.4,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1171",
+        "description": "Generic Marine Part 1171",
+        "quantity": 2,
+        "unit_price": 61.38
+      },
+      {
+        "part_number": "OIL-1020",
+        "description": "Mercury Engine Oil 15W-40",
+        "quantity": 2,
+        "unit_price": 48.33
+      },
+      {
+        "part_number": "GEN-1264",
+        "description": "Generic Marine Part 1264",
+        "quantity": 1,
+        "unit_price": 85.03
+      }
+    ],
+    "total_labor_hours": 3.4,
+    "total_parts_cost": 304.45,
+    "total_invoice": 763.45,
+    "completion_date": "2025-10-13",
+    "region": "Pacific Northwest",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0076",
+    "vessel_type": "Runabout",
+    "loa": 23.5,
+    "loa_range": "20-25",
+    "year": 2020,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-300",
+    "service_category": "diagnostic",
+    "service_description": "No-start troubleshooting",
+    "labor_items": [
+      {
+        "task": "No-start troubleshooting",
+        "hours": 2.6,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GSK-1126",
+        "description": "Volvo Penta Water Pump Gasket Kit",
+        "quantity": 1,
+        "unit_price": 14.49
+      },
+      {
+        "part_number": "GEN-1254",
+        "description": "Generic Marine Part 1254",
+        "quantity": 1,
+        "unit_price": 99.85
+      },
+      {
+        "part_number": "MSC-1160",
+        "description": "Marine Sealant 3M 5200",
+        "quantity": 1,
+        "unit_price": 15.7
+      }
+    ],
+    "total_labor_hours": 2.6,
+    "total_parts_cost": 130.04,
+    "total_invoice": 455.04,
+    "completion_date": "2025-01-23",
+    "region": "Great Lakes",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0077",
+    "vessel_type": "Runabout",
+    "loa": 21.5,
+    "loa_range": "20-25",
+    "year": 2009,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 2.4,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ELC-1083",
+        "description": "Battery Switch",
+        "quantity": 2,
+        "unit_price": 83.86
+      }
+    ],
+    "total_labor_hours": 2.4,
+    "total_parts_cost": 167.72,
+    "total_invoice": 467.72,
+    "completion_date": "2025-09-07",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2026-0078",
+    "vessel_type": "Center Console",
+    "loa": 28.3,
+    "loa_range": "25-30",
+    "year": 2013,
+    "engine_make": "MerCruiser",
+    "engine_model": "5.0L MPI",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 2.9,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "ELC-1086",
+        "description": "Bilge Pump 1000 GPH",
+        "quantity": 1,
+        "unit_price": 89.89
+      }
+    ],
+    "total_labor_hours": 2.9,
+    "total_parts_cost": 89.89,
+    "total_invoice": 510.39,
+    "completion_date": "2026-02-03",
+    "region": "Pacific Northwest",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0079",
+    "vessel_type": "Sailboat",
+    "loa": 39.5,
+    "loa_range": "35-40",
+    "year": 2022,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-300",
+    "service_category": "outboard",
+    "service_description": "Lower unit service",
+    "labor_items": [
+      {
+        "task": "Lower unit service",
+        "hours": 2.6,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1190",
+        "description": "Generic Marine Part 1190",
+        "quantity": 2,
+        "unit_price": 47.96
+      },
+      {
+        "part_number": "GEN-1268",
+        "description": "Generic Marine Part 1268",
+        "quantity": 2,
+        "unit_price": 68.85
+      }
+    ],
+    "total_labor_hours": 2.6,
+    "total_parts_cost": 233.62,
+    "total_invoice": 532.62,
+    "completion_date": "2025-12-26",
+    "region": "Gulf Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0080",
+    "vessel_type": "Runabout",
+    "loa": 22.0,
+    "loa_range": "20-25",
+    "year": 2020,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "annual",
+    "service_description": "Winterization",
+    "labor_items": [
+      {
+        "task": "Winterization",
+        "hours": 3.0,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1031",
+        "description": "Pennzoil Marine Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 46.5
+      },
+      {
+        "part_number": "GEN-1258",
+        "description": "Generic Marine Part 1258",
+        "quantity": 2,
+        "unit_price": 33.86
+      },
+      {
+        "part_number": "GEN-1214",
+        "description": "Generic Marine Part 1214",
+        "quantity": 1,
+        "unit_price": 96.15
+      }
+    ],
+    "total_labor_hours": 3.0,
+    "total_parts_cost": 256.87,
+    "total_invoice": 631.87,
+    "completion_date": "2024-08-03",
+    "region": "Northeast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0081",
+    "vessel_type": "Runabout",
+    "loa": 19.8,
+    "loa_range": "15-20",
+    "year": 2020,
+    "engine_make": "Mercury",
+    "engine_model": "150 FourStroke",
+    "service_category": "electrical",
+    "service_description": "Electrical troubleshooting",
+    "labor_items": [
+      {
+        "task": "Electrical troubleshooting",
+        "hours": 2.5,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1212",
+        "description": "Generic Marine Part 1212",
+        "quantity": 2,
+        "unit_price": 50.94
+      },
+      {
+        "part_number": "GEN-1190",
+        "description": "Generic Marine Part 1190",
+        "quantity": 1,
+        "unit_price": 47.96
+      }
+    ],
+    "total_labor_hours": 2.5,
+    "total_parts_cost": 149.84,
+    "total_invoice": 462.34,
+    "completion_date": "2025-05-11",
+    "region": "Pacific Northwest",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2026-0082",
+    "vessel_type": "Runabout",
+    "loa": 23.0,
+    "loa_range": "20-25",
+    "year": 2018,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D4-300",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 1.6,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1188",
+        "description": "Generic Marine Part 1188",
+        "quantity": 1,
+        "unit_price": 27.11
+      }
+    ],
+    "total_labor_hours": 1.6,
+    "total_parts_cost": 27.11,
+    "total_invoice": 259.11,
+    "completion_date": "2026-02-13",
+    "region": "Gulf Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0083",
+    "vessel_type": "Pontoon Boat",
+    "loa": 25.4,
+    "loa_range": "25-30",
+    "year": 2016,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 1.8,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "SPK-1038",
+        "description": "Spark Plug for Mercury 150 FourStroke",
+        "quantity": 1,
+        "unit_price": 22.78
+      },
+      {
+        "part_number": "GEN-1265",
+        "description": "Generic Marine Part 1265",
+        "quantity": 1,
+        "unit_price": 73.31
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 96.09,
+    "total_invoice": 303.09,
+    "completion_date": "2024-05-03",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0084",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 34.9,
+    "loa_range": "30-35",
+    "year": 2023,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "annual",
+    "service_description": "Winterization",
+    "labor_items": [
+      {
+        "task": "Winterization",
+        "hours": 3.5,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1180",
+        "description": "Generic Marine Part 1180",
+        "quantity": 1,
+        "unit_price": 75.61
+      }
+    ],
+    "total_labor_hours": 3.5,
+    "total_parts_cost": 75.61,
+    "total_invoice": 513.11,
+    "completion_date": "2025-11-13",
+    "region": "Northeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0085",
+    "vessel_type": "Center Console",
+    "loa": 28.6,
+    "loa_range": "25-30",
+    "year": 2009,
+    "engine_make": "Yamaha",
+    "engine_model": "F250",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 2.9,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1021",
+        "description": "Mercury Engine Oil 5W-30",
+        "quantity": 2,
+        "unit_price": 45.75
+      },
+      {
+        "part_number": "ELC-1083",
+        "description": "Battery Switch",
+        "quantity": 1,
+        "unit_price": 83.86
+      },
+      {
+        "part_number": "OIL-1018",
+        "description": "Mercury Engine Oil 10W-30",
+        "quantity": 2,
+        "unit_price": 48.42
+      }
+    ],
+    "total_labor_hours": 2.9,
+    "total_parts_cost": 272.2,
+    "total_invoice": 605.7,
+    "completion_date": "2024-03-29",
+    "region": "Southeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0086",
+    "vessel_type": "Center Console",
+    "loa": 20.5,
+    "loa_range": "20-25",
+    "year": 2018,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "engine",
+    "service_description": "Engine diagnostic",
+    "labor_items": [
+      {
+        "task": "Engine diagnostic",
+        "hours": 2.0,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1249",
+        "description": "Generic Marine Part 1249",
+        "quantity": 1,
+        "unit_price": 36.99
+      },
+      {
+        "part_number": "BLT-1074",
+        "description": "Suzuki Serpentine Belt",
+        "quantity": 1,
+        "unit_price": 65.53
+      },
+      {
+        "part_number": "GEN-1213",
+        "description": "Generic Marine Part 1213",
+        "quantity": 2,
+        "unit_price": 48.06
+      }
+    ],
+    "total_labor_hours": 2.0,
+    "total_parts_cost": 198.64,
+    "total_invoice": 468.64,
+    "completion_date": "2025-06-25",
+    "region": "Pacific Northwest",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0087",
+    "vessel_type": "Runabout",
+    "loa": 18.4,
+    "loa_range": "15-20",
+    "year": 2020,
+    "engine_make": "MerCruiser",
+    "engine_model": "5.0L MPI",
+    "service_category": "hull",
+    "service_description": "Hull cleaning and bottom paint",
+    "labor_items": [
+      {
+        "task": "Hull cleaning and bottom paint",
+        "hours": 5.2,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1035",
+        "description": "Mobil 1 Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 42.24
+      }
+    ],
+    "total_labor_hours": 5.2,
+    "total_parts_cost": 84.48,
+    "total_invoice": 838.48,
+    "completion_date": "2025-11-25",
+    "region": "Southeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2026-0088",
+    "vessel_type": "Runabout",
+    "loa": 18.8,
+    "loa_range": "15-20",
+    "year": 2023,
+    "engine_make": "Suzuki",
+    "engine_model": "DF250",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 1.8,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1227",
+        "description": "Generic Marine Part 1227",
+        "quantity": 2,
+        "unit_price": 86.73
+      },
+      {
+        "part_number": "GEN-1252",
+        "description": "Generic Marine Part 1252",
+        "quantity": 1,
+        "unit_price": 16.52
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 189.98,
+    "total_invoice": 432.98,
+    "completion_date": "2026-03-01",
+    "region": "Northeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0089",
+    "vessel_type": "Pontoon Boat",
+    "loa": 24.3,
+    "loa_range": "20-25",
+    "year": 2011,
+    "engine_make": "MerCruiser",
+    "engine_model": "5.0L MPI",
+    "service_category": "electrical",
+    "service_description": "Electrical troubleshooting",
+    "labor_items": [
+      {
+        "task": "Electrical troubleshooting",
+        "hours": 2.1,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1202",
+        "description": "Generic Marine Part 1202",
+        "quantity": 1,
+        "unit_price": 86.37
+      },
+      {
+        "part_number": "GEN-1282",
+        "description": "Generic Marine Part 1282",
+        "quantity": 2,
+        "unit_price": 67.07
+      }
+    ],
+    "total_labor_hours": 2.1,
+    "total_parts_cost": 220.51,
+    "total_invoice": 525.01,
+    "completion_date": "2025-05-24",
+    "region": "Gulf Coast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0090",
+    "vessel_type": "Center Console",
+    "loa": 23.7,
+    "loa_range": "20-25",
+    "year": 2009,
+    "engine_make": "Honda",
+    "engine_model": "BF200",
+    "service_category": "engine",
+    "service_description": "Engine diagnostic",
+    "labor_items": [
+      {
+        "task": "Engine diagnostic",
+        "hours": 1.6,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1208",
+        "description": "Generic Marine Part 1208",
+        "quantity": 1,
+        "unit_price": 44.1
+      }
+    ],
+    "total_labor_hours": 1.6,
+    "total_parts_cost": 44.1,
+    "total_invoice": 228.1,
+    "completion_date": "2025-03-29",
+    "region": "Southeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0091",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.4,
+    "loa_range": "20-25",
+    "year": 2022,
+    "engine_make": "Suzuki",
+    "engine_model": "DF200",
+    "service_category": "hull",
+    "service_description": "Hull cleaning and bottom paint",
+    "labor_items": [
+      {
+        "task": "Hull cleaning and bottom paint",
+        "hours": 5.1,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1028",
+        "description": "Quicksilver Engine Oil 15W-40",
+        "quantity": 2,
+        "unit_price": 49.33
+      },
+      {
+        "part_number": "GEN-1171",
+        "description": "Generic Marine Part 1171",
+        "quantity": 2,
+        "unit_price": 61.38
+      },
+      {
+        "part_number": "GEN-1251",
+        "description": "Generic Marine Part 1251",
+        "quantity": 1,
+        "unit_price": 77.66
+      }
+    ],
+    "total_labor_hours": 5.1,
+    "total_parts_cost": 299.08,
+    "total_invoice": 1038.58,
+    "completion_date": "2025-10-25",
+    "region": "West Coast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2025-0092",
+    "vessel_type": "Cabin Cruiser",
+    "loa": 26.5,
+    "loa_range": "25-30",
+    "year": 2020,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 2.4,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1291",
+        "description": "Generic Marine Part 1291",
+        "quantity": 2,
+        "unit_price": 79.39
+      }
+    ],
+    "total_labor_hours": 2.4,
+    "total_parts_cost": 158.78,
+    "total_invoice": 482.78,
+    "completion_date": "2025-10-21",
+    "region": "Southeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0093",
+    "vessel_type": "Sailboat",
+    "loa": 37.7,
+    "loa_range": "35-40",
+    "year": 2022,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "electrical",
+    "service_description": "LED lighting upgrade",
+    "labor_items": [
+      {
+        "task": "LED lighting upgrade",
+        "hours": 1.9,
+        "rate": 135.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1291",
+        "description": "Generic Marine Part 1291",
+        "quantity": 2,
+        "unit_price": 79.39
+      },
+      {
+        "part_number": "GEN-1175",
+        "description": "Generic Marine Part 1175",
+        "quantity": 1,
+        "unit_price": 27.13
+      },
+      {
+        "part_number": "GEN-1182",
+        "description": "Generic Marine Part 1182",
+        "quantity": 1,
+        "unit_price": 98.56
+      }
+    ],
+    "total_labor_hours": 1.9,
+    "total_parts_cost": 284.47,
+    "total_invoice": 540.97,
+    "completion_date": "2024-08-06",
+    "region": "West Coast",
+    "season": "summer"
+  },
+  {
+    "work_order_id": "WO-2025-0094",
+    "vessel_type": "Sailboat",
+    "loa": 26.0,
+    "loa_range": "25-30",
+    "year": 2005,
+    "engine_make": "Mercury",
+    "engine_model": "250 Pro XS",
+    "service_category": "annual",
+    "service_description": "Spring commissioning",
+    "labor_items": [
+      {
+        "task": "Spring commissioning",
+        "hours": 5.0,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1183",
+        "description": "Generic Marine Part 1183",
+        "quantity": 2,
+        "unit_price": 18.85
+      },
+      {
+        "part_number": "PNT-1090",
+        "description": "Pettit Bottom Paint",
+        "quantity": 2,
+        "unit_price": 102.05
+      }
+    ],
+    "total_labor_hours": 5.0,
+    "total_parts_cost": 241.8,
+    "total_invoice": 966.8,
+    "completion_date": "2025-02-08",
+    "region": "West Coast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2025-0095",
+    "vessel_type": "Pontoon Boat",
+    "loa": 20.5,
+    "loa_range": "20-25",
+    "year": 2006,
+    "engine_make": "Yamaha",
+    "engine_model": "F150",
+    "service_category": "diagnostic",
+    "service_description": "No-start troubleshooting",
+    "labor_items": [
+      {
+        "task": "No-start troubleshooting",
+        "hours": 1.4,
+        "rate": 115.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1209",
+        "description": "Generic Marine Part 1209",
+        "quantity": 2,
+        "unit_price": 98.67
+      },
+      {
+        "part_number": "GEN-1265",
+        "description": "Generic Marine Part 1265",
+        "quantity": 2,
+        "unit_price": 73.31
+      }
+    ],
+    "total_labor_hours": 1.4,
+    "total_parts_cost": 343.96,
+    "total_invoice": 504.96,
+    "completion_date": "2025-11-24",
+    "region": "Great Lakes",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0096",
+    "vessel_type": "Sailboat",
+    "loa": 29.1,
+    "loa_range": "25-30",
+    "year": 2021,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "outboard",
+    "service_description": "Annual outboard service",
+    "labor_items": [
+      {
+        "task": "Annual outboard service",
+        "hours": 3.5,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1266",
+        "description": "Generic Marine Part 1266",
+        "quantity": 1,
+        "unit_price": 65.04
+      },
+      {
+        "part_number": "GEN-1174",
+        "description": "Generic Marine Part 1174",
+        "quantity": 2,
+        "unit_price": 82.66
+      },
+      {
+        "part_number": "OIL-1026",
+        "description": "Quicksilver Engine Oil 10W-30",
+        "quantity": 1,
+        "unit_price": 31.22
+      }
+    ],
+    "total_labor_hours": 3.5,
+    "total_parts_cost": 261.58,
+    "total_invoice": 769.08,
+    "completion_date": "2024-03-20",
+    "region": "Southeast",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2024-0097",
+    "vessel_type": "Center Console",
+    "loa": 29.5,
+    "loa_range": "25-30",
+    "year": 2009,
+    "engine_make": "Volvo Penta",
+    "engine_model": "D6-370",
+    "service_category": "mechanical",
+    "service_description": "Trim system repair",
+    "labor_items": [
+      {
+        "task": "Trim system repair",
+        "hours": 1.8,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1206",
+        "description": "Generic Marine Part 1206",
+        "quantity": 2,
+        "unit_price": 46.08
+      },
+      {
+        "part_number": "ZNC-1102",
+        "description": "Volvo Penta Prop Zinc",
+        "quantity": 1,
+        "unit_price": 29.44
+      },
+      {
+        "part_number": "ELC-1083",
+        "description": "Battery Switch",
+        "quantity": 2,
+        "unit_price": 83.86
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 289.32,
+    "total_invoice": 550.32,
+    "completion_date": "2024-05-25",
+    "region": "Great Lakes",
+    "season": "spring"
+  },
+  {
+    "work_order_id": "WO-2025-0098",
+    "vessel_type": "Runabout",
+    "loa": 20.6,
+    "loa_range": "20-25",
+    "year": 2019,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "annual",
+    "service_description": "Annual service package",
+    "labor_items": [
+      {
+        "task": "Annual service package",
+        "hours": 4.4,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "GEN-1259",
+        "description": "Generic Marine Part 1259",
+        "quantity": 1,
+        "unit_price": 93.98
+      },
+      {
+        "part_number": "GEN-1202",
+        "description": "Generic Marine Part 1202",
+        "quantity": 2,
+        "unit_price": 86.37
+      },
+      {
+        "part_number": "GEN-1170",
+        "description": "Generic Marine Part 1170",
+        "quantity": 1,
+        "unit_price": 94.19
+      }
+    ],
+    "total_labor_hours": 4.4,
+    "total_parts_cost": 360.91,
+    "total_invoice": 998.91,
+    "completion_date": "2025-02-08",
+    "region": "Southeast",
+    "season": "winter"
+  },
+  {
+    "work_order_id": "WO-2024-0099",
+    "vessel_type": "Pontoon Boat",
+    "loa": 22.8,
+    "loa_range": "20-25",
+    "year": 2016,
+    "engine_make": "Mercury",
+    "engine_model": "200 Verado",
+    "service_category": "hull",
+    "service_description": "Hull cleaning and bottom paint",
+    "labor_items": [
+      {
+        "task": "Hull cleaning and bottom paint",
+        "hours": 4.8,
+        "rate": 145.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "OIL-1035",
+        "description": "Mobil 1 Engine Oil 10W-40",
+        "quantity": 2,
+        "unit_price": 42.24
+      },
+      {
+        "part_number": "GEN-1197",
+        "description": "Generic Marine Part 1197",
+        "quantity": 1,
+        "unit_price": 14.54
+      },
+      {
+        "part_number": "GEN-1175",
+        "description": "Generic Marine Part 1175",
+        "quantity": 2,
+        "unit_price": 27.13
+      }
+    ],
+    "total_labor_hours": 4.8,
+    "total_parts_cost": 153.28,
+    "total_invoice": 849.28,
+    "completion_date": "2024-09-01",
+    "region": "Northeast",
+    "season": "fall"
+  },
+  {
+    "work_order_id": "WO-2024-0100",
+    "vessel_type": "Pontoon Boat",
+    "loa": 23.8,
+    "loa_range": "20-25",
+    "year": 2021,
+    "engine_make": "Suzuki",
+    "engine_model": "DF150",
+    "service_category": "outboard",
+    "service_description": "Impeller replacement",
+    "labor_items": [
+      {
+        "task": "Impeller replacement",
+        "hours": 1.8,
+        "rate": 125.0
+      }
+    ],
+    "parts_used": [
+      {
+        "part_number": "IMP-1060",
+        "description": "Suzuki Water Pump Impeller Kit",
+        "quantity": 1,
+        "unit_price": 125.15
+      }
+    ],
+    "total_labor_hours": 1.8,
+    "total_parts_cost": 125.15,
+    "total_invoice": 350.15,
+    "completion_date": "2024-11-30",
+    "region": "Southeast",
+    "season": "fall"
+  }
+]

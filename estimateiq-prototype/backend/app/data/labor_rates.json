@@ -1,0 +1,27 @@
+{
+  "default_rate": 125.0,
+  "rates_by_category": {
+    "engine": 135.0,
+    "hull": 115.0,
+    "electrical": 125.0,
+    "mechanical": 125.0,
+    "outboard": 130.0,
+    "inboard": 140.0,
+    "annual": 125.0,
+    "diagnostic": 145.0
+  },
+  "rates_by_region": {
+    "Northeast": 1.1,
+    "Southeast": 1.0,
+    "Gulf Coast": 0.95,
+    "Great Lakes": 1.0,
+    "West Coast": 1.15,
+    "Pacific Northwest": 1.1
+  },
+  "urgency_multipliers": {
+    "routine": 1.0,
+    "priority": 1.25,
+    "emergency": 1.5
+  },
+  "last_updated": "2026-03-13T22:50:09.471779"
+}
